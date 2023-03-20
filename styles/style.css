@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.offers {
+    background: #FFFFFF;
+    width: 1440px;
+    height: 569px;
+}
+.title-text {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+.title-line {
+    width: 100px;
+    height: 4px;
+    background: #f5bd41;
+    margin: auto auto 80px;
+}
+.offer-support {
+    text-align: center;
+    display: inline-block;
+    margin-left: 104px;
+    margin-bottom: 122px;
+    width: 296px;
+    height: 176px;
+}
+.offer-contact {
+    text-align: center;
+    display: inline-block;
+    width: 296px;
+    height: 178px;
+}
+.offer-book {
+    text-align: center;
+    display: inline-block;
+    width: 296px;
+    height: 184px;
+}
+.offer-review {
+    text-align: center;
+    display: inline-block;
+    width: 296px;
+    height: 183px;
+    margin-right: 104px;
+}
+.images {
+    margin-bottom: 48px;
+}
+.images-text_support {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #383838;
+    width: 141px;
+    height: 28px;
+    margin: 0 78px 0 77px;
+}
+.images-text_contact {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #383838;
+    width: 296px;
+    height: 28px;
+    margin: auto auto 2px;
+}
+.images-text_book {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #383838;
+    width: 168px;
+    height: 28px;
+    margin: 0 64px 8px;
+}
+.images-text_review {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #383838;
+    width: 225px;
+    height: 28px;
+    margin: 0 35px 7px 36px;
+}
