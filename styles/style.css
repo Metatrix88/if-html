@@ -1,90 +1,67 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
+.offer {
+    background: #ffffff;
+    max-width: 1440px;
+    max-height: 569px;
 }
-.offers {
-    background: #FFFFFF;
-    width: 1440px;
-    height: 569px;
-}
-.title-text {
+.title {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     text-align: center;
-    margin-top: 120px;
+}
+.offer__title {
+    padding-top: 120px;
     margin-bottom: 20px;
 }
-.title-line {
+.title__line {
     width: 100px;
     height: 4px;
     background: #f5bd41;
     margin: auto auto 80px;
 }
-.offer-support {
-    text-align: center;
-    display: inline-block;
-    margin-left: 104px;
-    margin-bottom: 122px;
-    width: 296px;
-    height: 176px;
-}
-.offer-contact {
+.offer__item {
     text-align: center;
     display: inline-block;
     width: 296px;
-    height: 178px;
 }
-.offer-book {
-    text-align: center;
-    display: inline-block;
-    width: 296px;
-    height: 184px;
-}
-.offer-review {
-    text-align: center;
-    display: inline-block;
-    width: 296px;
-    height: 183px;
-    margin-right: 104px;
-}
-.images {
+.offer__images {
     margin-bottom: 48px;
 }
-.images-text_support {
+.offer__descr {
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: #383838;
-    width: 141px;
     height: 28px;
+}
+.offer__item-support {
+    margin-left: 104px;
+    margin-bottom: 122px;
+    height: 176px;
+}
+.offer__descr-support {
     margin: 0 78px 0 77px;
 }
-.images-text_contact {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #383838;
-    width: 296px;
-    height: 28px;
+.offer__item-contact {
+    height: 178px;
+    margin-bottom: 120px;
+}
+.offer__descr-contact {
     margin: auto auto 2px;
 }
-.images-text_book {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #383838;
-    width: 168px;
-    height: 28px;
+.offer__item-book {
+    height: 184px;
+    margin-bottom: 114px;
+}
+.offer__descr-book {
     margin: 0 64px 8px;
 }
-.images-text_review {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #383838;
-    width: 225px;
-    height: 28px;
+.offer__item-review {
+    height: 183px;
+    margin-bottom: 115px;
+    margin-right: 104px;
+}
+.offer__descr-review {
     margin: 0 35px 7px 36px;
 }
