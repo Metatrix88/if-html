@@ -1,0 +1,55 @@
+body {
+  background: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #383838;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 104px 0;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+}
+
+.offer-title {
+  margin-bottom: 20px;
+}
+
+.offer-line {
+  width: 100px;
+  height: 4px;
+  background: #f5bd41;
+  margin: auto auto 80px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.col {
+  width: 25%;
+}
+
+.offer {
+  margin-bottom: 120px;
+}
+
+.offer-col {
+  text-align: center;
+}
+
+.offer-img {
+  margin-bottom: 48px;
+}
+
+.offer-descr {
+  font-size: 24px;
+}
