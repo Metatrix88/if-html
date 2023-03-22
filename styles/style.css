@@ -1,67 +1,55 @@
-.offer {
-    background: #ffffff;
-    max-width: 1440px;
-    max-height: 569px;
+body {
+  background: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #383838;
 }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 120px 104px 0;
+}
+
 .title {
-    font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
 }
-.offer__title {
-    padding-top: 120px;
-    margin-bottom: 20px;
+
+.offer-title {
+  margin-bottom: 20px;
 }
-.title__line {
-    width: 100px;
-    height: 4px;
-    background: #f5bd41;
-    margin: auto auto 80px;
+
+.offer-line {
+  width: 100px;
+  height: 4px;
+  background: #f5bd41;
+  margin: auto auto 80px;
 }
-.offer__item {
-    text-align: center;
-    display: inline-block;
-    width: 296px;
+
+.row {
+  display: flex;
+  gap: 16px;
 }
-.offer__images {
-    margin-bottom: 48px;
+
+.col {
+  width: 25%;
 }
-.offer__descr {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #383838;
-    height: 28px;
+
+.offer {
+  margin-bottom: 120px;
 }
-.offer__item-support {
-    margin-left: 104px;
-    margin-bottom: 122px;
-    height: 176px;
+
+.offer-col {
+  text-align: center;
 }
-.offer__descr-support {
-    margin: 0 78px 0 77px;
+
+.offer-img {
+  margin-bottom: 48px;
 }
-.offer__item-contact {
-    height: 178px;
-    margin-bottom: 120px;
-}
-.offer__descr-contact {
-    margin: auto auto 2px;
-}
-.offer__item-book {
-    height: 184px;
-    margin-bottom: 114px;
-}
-.offer__descr-book {
-    margin: 0 64px 8px;
-}
-.offer__item-review {
-    height: 183px;
-    margin-bottom: 115px;
-    margin-right: 104px;
-}
-.offer__descr-review {
-    margin: 0 35px 7px 36px;
+
+.offer-descr {
+  font-size: 24px;
 }
