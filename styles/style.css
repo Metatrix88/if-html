@@ -17,8 +17,12 @@ body {
 
 .container {
   max-width: 1440px;
+  padding: 0 104px;
   margin: 0 auto;
-  padding: 120px 104px 0;
+}
+
+.offer {
+  padding: 120px 0;
 }
 
 .title {
@@ -44,10 +48,6 @@ h2:after {
   width: 25%;
 }
 
-.offer {
-  margin-bottom: 120px;
-}
-
 .offer__content {
   text-align: center;
 }
@@ -63,6 +63,7 @@ h2:after {
 .footer {
   background-color: #10367c;
   color: #ffffff;
+  padding: 120px 0;
 }
 
 .footer__list {
@@ -91,6 +92,5 @@ h2:after {
 
 .footer__author {
   font-size: 14px;
-  padding-top: 40px;
-  padding-bottom: 120px;
+  margin-top: 40px;
 }
