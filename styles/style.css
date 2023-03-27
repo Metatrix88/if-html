@@ -21,6 +21,83 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  position: absolute;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 104px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 51px;
+  left: 0;
+  right: 0;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-bottom: 6px;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__items {
+  display: flex;
+  font-size: 24px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.header__item {
+  margin-right: 24px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header__link-headline:after {
+  content: " ";
+  width: 50px;
+  display: flex;
+  border: 2px solid #f5bd41;
+  margin: 12px auto 0;
+}
+
+.header__img1 {
+  width: 30px;
+  height: 30px;
+  margin: 5px 24px 11px;
+}
+.header__img2 {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+}
+
+.top-section {
+  height: 100vh;
+  padding-bottom: 120px;
+  background-image: url("../images/svg/background.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.top-section__content {
+
+}
+.top-section__title {
+
+}
+
+
+
+
 .offer {
   padding: 120px 0;
 }
