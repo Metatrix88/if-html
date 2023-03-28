@@ -12,25 +12,77 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Lesson-6</title>
-    <link rel="icon" href="./images/favicons/icon-green-32.ico">
+    <link rel="icon" href="./images/favicons/icon-green-32.ico" />
   </head>
   <body>
-  <header class="header">
-    <img class="header__logo" src="./images/png/logo.png" alt="logo">
+    <header class="header">
+      <img class="header__logo" src="./images/png/logo.png" alt="logo" />
       <div class="header__nav">
         <ul class="header__items">
-          <li class="header__item"><a class="header__link header__link-headline" href="#">Stays</a></li>
-          <li class="header__item"><a class="header__link" href="#">Attractions</a></li>
+          <li class="header__item">
+            <a class="header__link header__link-headline" href="#">Stays</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Attractions</a>
+          </li>
         </ul>
-        <img class="header__img1" src="./images/svg/night.svg" alt="night/day switch">
-        <img class="header__img2" src="images/svg/Log-in.svg" alt="log-in">
+        <img
+          class="header__img1"
+          src="./images/svg/night.svg"
+          alt="night/day switch"
+        />
+        <img class="header__img2" src="images/svg/Log-in.svg" alt="log-in" />
       </div>
-  </header>
+    </header>
 
     <section class="top-section">
       <div class="container">
         <div class="top-section__content">
-          <h1 class="top-section__title">Discover stays to live, work or just relax</h1>
+          <h1 class="top-section__title">
+            <span>Discover stays to&nbsp;live,&nbsp;work or just relax</span>
+          </h1>
+          <form class="form__items">
+            <div class="form__item">
+              <label class="form__label form__label--first" for="destination"
+                >Your destination or hotel name</label
+              >
+              <input
+                class="form__input"
+                id="destination"
+                type="text"
+                name="destination"
+                placeholder="New York"
+              />
+            </div>
+            <div class="form__item form__item--second">
+              <label class="form__label form__label--second" for="date"
+                >Check-in — Check-out</label
+              >
+              <input
+                class="form__input--second"
+                id="date"
+                type="text"
+                name="date"
+                placeholder="Tue 15 Sept — Sat 19 Sept"
+              />
+            </div>
+            <div class="form__item">
+              <input
+                class="form__input"
+                type="text"
+                placeholder="2 Adults — 0 Children — 1 Room"
+              />
+            </div>
+            <div class="form__button">
+              <button class="form__button--search" type="”button”">
+                Search
+              </button>
+            </div>
+          </form>
+          <div class="top-section__download">
+            <img src="./images/svg/google-play.svg" alt="google-play" />
+            <img src="./images/svg/app_Store.svg" alt="app_Store" />
+          </div>
         </div>
       </div>
     </section>
@@ -72,7 +124,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer" >
+    <footer class="footer">
       <div class="container">
         <div class="footer__list">
           <ul class="footer__items">

@@ -15,10 +15,29 @@ body {
   color: #383838;
 }
 
+input,
+button {
+  outline: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 104px;
   margin: 0 auto;
+}
+
+.top-section {
+  min-height: 100vh;
+  background-image: url("../images/svg/background.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
 }
 
 .header {
@@ -65,7 +84,7 @@ body {
   width: 50px;
   display: flex;
   border: 2px solid #f5bd41;
-  margin: 12px auto 0;
+  margin: 10px auto 0;
 }
 
 .header__img1 {
@@ -79,24 +98,108 @@ body {
   margin-bottom: 6px;
 }
 
-.top-section {
-  height: 100vh;
-  padding-bottom: 120px;
-  background-image: url("../images/svg/background.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .top-section__content {
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 293px;
 }
+
 .top-section__title {
-
+  color: white;
+  max-width: 542px;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 145px;
 }
 
+.form__items {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  height: 64px;
+}
 
+.form__item {
+  display: flex;
+  font-size: 18px;
+  width: 50%;
+}
 
+.form__input {
+  padding: 22px 24px;
+  flex-grow: 1;
+}
+
+input::placeholder {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.15;
+  font-weight: 400;
+  color: #383838;
+}
+
+.form__input--second {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  position: absolute;
+  width: 264px;
+  height: 64px;
+  padding: 23px 24px;
+  top: -3px;
+  left: 467px;
+}
+
+.form__button {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form__button--search {
+  background-color: #3077c6;
+  border-radius: 8px;
+  position: absolute;
+  padding: 20px 57px;
+  height: 64px;
+  width: 192px;
+  border: none;
+  left: 1040px;
+  top: -3px;
+}
+
+.form__item--second {
+  flex-shrink: 3;
+}
+
+.form__label {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+}
+
+.form__label--first {
+  top: -45px;
+  left: 24px;
+}
+
+.form__label--second {
+  top: -45px;
+  left: 491px;
+}
+
+.top-section__download {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 120px;
+}
 
 .offer {
   padding: 120px 0;
