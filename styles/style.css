@@ -1,4 +1,5 @@
 @import url("./fonts.css");
+@import url("./fonts/fontawesome-free-6.4.0-web/css/all.min.css");
 
 *,
 *:before,
@@ -24,6 +25,14 @@ input {
   font: inherit;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
 .container {
   max-width: 1440px;
   padding: 0 104px;
@@ -46,12 +55,15 @@ input {
 }
 
 .header__logo {
+  width: 205px;
+  height: 40px;
   margin-bottom: 6px;
 }
 
 .header__nav {
   display: flex;
   gap: 48px;
+  height: 46px;
 }
 
 .header__info {
@@ -63,16 +75,29 @@ input {
 }
 
 .header__link {
-  text-decoration: none;
+  position: relative;
   color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__link:after {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #f5bd41;
+  content: "";
+  top: 40px;
+  transition: width 0.3s ease-out;
 }
 
-.header__link-headline:after {
-  content: " ";
-  width: 50px;
-  display: flex;
-  border: 2px solid #f5bd41;
-  margin: 10px auto 0;
+.header__link:hover:after,
+.header__link:focus:after {
+  width: 100%;
+}
+
+.header__button-wrap {
+  height: 46px;
 }
 
 .header__img-night {
@@ -88,7 +113,7 @@ input {
 
 .top-section {
   min-height: 100vh;
-  background-image: url("../images/svg/background.svg");
+  background-image: url("../images/jpg/background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -118,14 +143,17 @@ input {
   margin-bottom: 120px;
 }
 
-.top-section__search-form {
+.top-section__search {
+  height: 64px;
+  border: 3px solid #f3f3f4;
+}
+
+.search-form {
   display: flex;
   flex-wrap: nowrap;
   background-color: white;
   border-radius: 8px;
-  height: 64px;
   width: 100%;
-  border: 3px solid #f3f3f4;
   align-items: center;
 }
 
@@ -205,17 +233,27 @@ input:placeholder-shown {
   opacity: 1;
 }
 
-.top-section__download {
+.top-section__download-wrap {
   display: flex;
   justify-content: center;
   gap: 16px;
+}
+
+.top-section__google-play {
+  width: 135px;
+  height: 40px;
+}
+
+.top-section__app-store {
+  width: 120px;
+  height: 40px;
 }
 
 .offer {
   padding: 120px 0;
 }
 
-.title {
+.offer__title {
   font-weight: 500;
   font-size: 40px;
   text-align: center;
@@ -243,11 +281,14 @@ h2:after {
 }
 
 .offer__img {
+  width: 100px;
+  height: 100px;
   margin-bottom: 48px;
 }
 
-.offer__descr {
+.offer__subtitle {
   font-size: 24px;
+  font-weight: 400;
 }
 
 .footer {
@@ -256,14 +297,11 @@ h2:after {
   padding: 120px 0;
 }
 
-.footer__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
+.col {
+  width: 33.3333%;
 }
 
-.footer__items {
-  width: 33.3333%;
+.footer__list {
   font-size: 20px;
 }
 
@@ -276,7 +314,7 @@ h2:after {
   text-decoration: none;
 }
 
-.footer__link--title {
+.footer__title {
   font-weight: 500;
 }
 
