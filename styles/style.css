@@ -620,63 +620,59 @@ h2:after {
     background-color: var(--general-white-color);
   }
 
-  .search-form__input-city--md-sm {
+  .search-form__wrap-city--md-sm {
     align-content: center;
     grid-column: 1/3;
     width: 100%;
   }
 
-  .input-city--md-sm {
+  .search-form__input-city--md-sm {
     border-radius: 6px;
     width: 100%;
     padding: 0 16px;
   }
 
-  .input-checkIn--md-sm {
+  .search-form__input-checkIn--md-sm {
     border-radius: 6px;
     width: 100%;
     padding: 0 16px;
   }
 
-  .input-checkOut--md-sm {
+  .search-form__input-checkOut--md-sm {
     border-radius: 6px;
     width: 100%;
     padding: 0 16px;
   }
+
+  .search-form__wrap-properties--md-sm {
+    grid-column: 1/3;
+  }
+
+  .search-form__properties-inputs {
+    width: 100%;
+  }
+
 
   .search-form__input-adults--md-sm {
-    grid-column: 1/3;
-    width: 100%;
-  }
-
-
-  .inputs {
-    border-radius: 6px;
-  }
-
-  .input-adults--md-sm {
     width: 33%;
     padding: 0 16px;
   }
 
-  .input-children--md-sm {
+  .search-form__input-children--md-sm {
     width: 33%;
-    border: 1px solid #383838;
-    /*border-radius: 6px;*/
     padding: 0 16px;
   }
-  .input-rooms--md-sm {
+  .search-form__input-rooms--md-sm {
     width: 33%;
-    /*border-radius: 6px;*/
     padding: 0 16px;
   }
 
-  .search-form__input-button--md-sm {
+  .search-form__wrap-button--md-sm {
     align-content: center;
     grid-column: 1/3;
   }
 
-  .button-search--md-sm {
+  .search-form__button-search--md-sm {
     background-color: var(--primary-color);
     height: 56px;
     border-radius: 6px;
@@ -688,7 +684,7 @@ h2:after {
 
 
 
-  .inputs > label,
+  .search-form__properties-inputs > label,
   .search-form__input-wrap--md-sm > label {
     position: absolute;
     top: 50%;
@@ -700,28 +696,34 @@ h2:after {
     font-weight: 400;
   }
 
-  .input-checkIn--md-sm:focus ~ label,
-  .input-checkOut--md-sm:focus ~ label,
-  .input-adults--md-sm:focus ~ label,
-  .input-children--md-sm:focus ~ label,
-  .input-rooms--md-sm:focus ~ label,
-  .input-checkIn--md-sm:not(:focus):valid ~ label,
-  .input-checkOut--md-sm:not(:focus):valid ~ label,
-  .input-adults--md-sm:not(:focus):valid ~ label,
-  .input-children--md-sm:not(:focus):valid ~ label,
-  .input-rooms--md-sm:not(:focus):valid ~ label {
+  .aaa > label {
+
+  }
+
+
+
+  .search-form__input-checkIn--md-sm:focus ~ label,
+  .search-form__input-checkOut--md-sm:focus ~ label,
+  .search-form__input-adults--md-sm:focus ~ label,
+  .search-form__input-children--md-sm:focus ~ label,
+  .search-form__input-rooms--md-sm:focus ~ label,
+  .search-form__input-checkIn--md-sm:not(:focus):valid ~ label,
+  .search-form__input-checkOut--md-sm:not(:focus):valid ~ label,
+  .search-form__input-adults--md-sm:not(:focus):valid ~ label,
+  .search-form__input-children--md-sm:not(:focus):valid ~ label,
+  .search-form__input-rooms--md-sm:not(:focus):valid ~ label {
     top: 16px;
     color: var(--text-color);
     opacity: 1;
   }
 
-  .search-form__input-city--md-sm > label {
+  .search-form__wrap-city--md-sm > label {
     font-weight: 500;
     font-size: 18px;
   }
 
-  .input-city--md-sm:focus ~ label,
-  .input-city--md-sm:not(:focus):valid ~ label {
+  .search-form__input-city--md-sm:focus ~ label,
+  .search-form__input-city--md-sm:not(:focus):valid ~ label {
     top: -24px;
     color: var(--general-white-color);
     opacity: 1;
