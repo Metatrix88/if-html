@@ -649,13 +649,14 @@ h2:after {
   }
 
   .search-form__properties-inputs {
-    width: 100%;
+    position: relative;
   }
 
 
   .search-form__input-adults--md-sm {
     width: 33%;
     padding: 0 16px;
+    border-radius: 6px;
   }
 
   .search-form__input-children--md-sm {
@@ -665,6 +666,7 @@ h2:after {
   .search-form__input-rooms--md-sm {
     width: 33%;
     padding: 0 16px;
+    border-radius: 6px;
   }
 
   .search-form__wrap-button--md-sm {
@@ -684,7 +686,7 @@ h2:after {
 
 
 
-  .search-form__properties-inputs > label,
+
   .search-form__input-wrap--md-sm > label {
     position: absolute;
     top: 50%;
@@ -696,22 +698,11 @@ h2:after {
     font-weight: 400;
   }
 
-  .aaa > label {
-
-  }
-
-
 
   .search-form__input-checkIn--md-sm:focus ~ label,
   .search-form__input-checkOut--md-sm:focus ~ label,
-  .search-form__input-adults--md-sm:focus ~ label,
-  .search-form__input-children--md-sm:focus ~ label,
-  .search-form__input-rooms--md-sm:focus ~ label,
   .search-form__input-checkIn--md-sm:not(:focus):valid ~ label,
-  .search-form__input-checkOut--md-sm:not(:focus):valid ~ label,
-  .search-form__input-adults--md-sm:not(:focus):valid ~ label,
-  .search-form__input-children--md-sm:not(:focus):valid ~ label,
-  .search-form__input-rooms--md-sm:not(:focus):valid ~ label {
+  .search-form__input-checkOut--md-sm:not(:focus):valid ~ label {
     top: 16px;
     color: var(--text-color);
     opacity: 1;
@@ -729,11 +720,39 @@ h2:after {
     opacity: 1;
   }
 
+  .search-form__properties-inputs > label {
+    position: absolute;
+    top: -10%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    pointer-events: all;
+    font-size: 16px;
+    font-weight: 400;
+  }
 
-  /*.search-form__input-city--md-sm:hover {*/
-  /*  border: 3px solid var(--accent-color);*/
-  /*  border-radius: 8px;*/
-  /*}*/
+  .search-form__properties-inputs > label{
+    left: 228px;
+  }
+
+  .search-form__properties-inputs > label:nth-child(2) {
+    left: 16px;
+  }
+
+  .search-form__properties-inputs > label:last-child {
+    left: 436px;
+  }
+
+  .search-form__input-adults--md-sm:focus ~ label,
+  .search-form__input-children--md-sm:focus ~ label,
+  .search-form__input-rooms--md-sm:focus ~ label,
+  .search-form__input-adults--md-sm:not(:focus):valid ~ label,
+  .search-form__input-children--md-sm:not(:focus):valid ~ label,
+  .search-form__input-rooms--md-sm:not(:focus):valid ~ label {
+    top: -16px;
+    color: var(--text-color);
+    opacity: 1;
+}
+
 
 
 
