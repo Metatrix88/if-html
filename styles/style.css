@@ -1,5 +1,5 @@
-@import url("./fonts.css");
-@import url("./fonts/fontawesome-free-6.4.0-web/css/all.min.css");
+@import url('./fonts.css');
+@import url('../fonts/font-awesome/css/all.min.css');
 
 :root {
   --primary-color: #3077c6;
@@ -395,13 +395,6 @@ input:placeholder-shown {
   height: 40px;
 }
 
-
-
-
-
-
-
-
 .offers {
   padding-top: var(--block-space);
   padding-bottom: var(--block-space);
@@ -610,7 +603,7 @@ h2:after {
     margin-bottom: var(--block-space);
   }
 
-  .search-form__input-wrap--md-sm {
+  .search-form__inputs-wrap--md-sm {
     position: relative;
     white-space: nowrap;
     height: 56px;
@@ -620,33 +613,44 @@ h2:after {
     background-color: var(--general-white-color);
   }
 
-  .search-form__wrap-city--md-sm {
+  .search-form__location--md-sm {
     grid-column: 1/3;
+  }
+
+  .search-form__location-wrap--md-sm {
+    display: flex;
     width: 100%;
+    height: 56px;
     padding: 8px 16px;
   }
 
-  .search-form__input-city--md-sm {
+  .search-form__location-icon--md-sm {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: var(--secondary-text-color);
+  }
+
+  .search-form__location-input--md-sm {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .search-form__input-location--md-sm {
     border-radius: 6px;
     width: 100%;
     padding: 0;
+    height: 60%;
   }
 
-  .search-form__wrap-checkIn--md-sm {
+  .search-form__wrap-check--md-sm {
     padding: 8px 16px;
   }
 
-  .search-form__input-checkIn--md-sm {
-    border-radius: 6px;
-    width: 100%;
-    padding: 0;
-  }
-
-  .search-form__wrap-checkOut--md-sm {
-    padding: 8px 16px;
-  }
-
-  .search-form__input-checkOut--md-sm {
+  .search-form__input-check--md-sm {
     border-radius: 6px;
     width: 100%;
     padding: 0;
@@ -699,7 +703,8 @@ h2:after {
     color: var(--general-white-color);
   }
 
-  .search-form__input-wrap--md-sm > label,
+  .search-form__location-input--md-sm > label,
+  .search-form__wrap-check--md-sm > label,
   .search-form__options-input--md-sm > label {
     position: absolute;
     top: 50%;
@@ -711,17 +716,21 @@ h2:after {
     font-weight: 400;
   }
 
-  .search-form__wrap-city--md-sm > label {
+  .search-form__location-input--md-sm > label {
     font-weight: 500;
     font-size: 18px;
+    left: 0;
   }
 
-  .search-form__input-city--md-sm:focus ~ label,
-  .search-form__input-city--md-sm:not(:focus):valid ~ label,
-  .search-form__input-checkIn--md-sm:focus ~ label,
-  .search-form__input-checkOut--md-sm:focus ~ label,
-  .search-form__input-checkIn--md-sm:not(:focus):valid ~ label,
-  .search-form__input-checkOut--md-sm:not(:focus):valid ~ label,
+  .search-form__input-location--md-sm:focus ~ label,
+  .search-form__input-location--md-sm:not(:focus):valid ~ label {
+    top: 8px;
+    color: var(--text-color);
+    opacity: 1;
+  }
+
+  .search-form__input-check--md-sm:focus ~ label,
+  .search-form__input-check--md-sm:not(:focus):valid ~ label,
   .search-form__input-option--md-sm:focus ~ label,
   .search-form__input-option--md-sm:not(:focus):valid ~ label {
     top: 16px;
@@ -949,33 +958,30 @@ h2:after {
     padding: 8px;
   }
 
-  .search-form__input-wrap--md-sm {
+  .search-form__inputs-wrap--md-sm {
     height: 48px;
     border-radius: 4px;
   }
 
-  .search-form__wrap-city--md-sm {
+  .search-form__location-wrap--md-sm {
+    height: 48px;
     padding: 8px 8px;
   }
 
-  .search-form__input-city--md-sm {
+  .search-form__location-icon--md-sm {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+
+  .search-form__input-location--md-sm {
     border-radius: 4px;
   }
 
-
-  .search-form__wrap-checkIn--md-sm {
+  .search-form__wrap-check--md-sm {
     padding: 8px 8px;
   }
 
-  .search-form__input-checkIn--md-sm {
-    border-radius: 4px;
-  }
-
-  .search-form__wrap-checkOut--md-sm {
-    padding: 8px 8px;
-  }
-
-  .search-form__input-checkOut--md-sm {
+  .search-form__input-check--md-sm {
     border-radius: 4px;
   }
 
@@ -997,22 +1003,27 @@ h2:after {
     font-size: 19px;
   }
 
-  .search-form__input-wrap--md-sm > label,
+  .search-form__location-input--md-sm > label,
+  .search-form__wrap-check--md-sm > label,
   .search-form__options-input--md-sm > label {
     left: 8px;
     font-size: 12px;
   }
 
-  .search-form__wrap-city--md-sm > label {
+  .search-form__location-input--md-sm > label {
     font-size: 15px;
+    left: 0;
   }
 
-  .search-form__input-city--md-sm:focus ~ label,
-  .search-form__input-city--md-sm:not(:focus):valid ~ label,
-  .search-form__input-checkIn--md-sm:focus ~ label,
-  .search-form__input-checkOut--md-sm:focus ~ label,
-  .search-form__input-checkIn--md-sm:not(:focus):valid ~ label,
-  .search-form__input-checkOut--md-sm:not(:focus):valid ~ label,
+  .search-form__input-location--md-sm:focus ~ label,
+  .search-form__input-location--md-sm:not(:focus):valid ~ label {
+    top: 6px;
+    color: var(--text-color);
+    opacity: 1;
+  }
+
+  .search-form__input-check--md-sm:focus ~ label,
+  .search-form__input-check--md-sm:not(:focus):valid ~ label,
   .search-form__input-option--md-sm:focus ~ label,
   .search-form__input-option--md-sm:not(:focus):valid ~ label {
     top: 12px;

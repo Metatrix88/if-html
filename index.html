@@ -101,20 +101,27 @@
 
   <div class="container">
     <form class="md-2-col sm-2-col search-form--md-sm">
-      <div class="search-form__input-wrap--md-sm search-form__wrap-city--md-sm">
-        <input
-                class="search-form__input-city--md-sm"
-                type="text"
-                name="city"
-                id="city-md"
-                title="Your destination or hotel name"
-                required
-        />
-        <label for="city-md">Your destination or hotel name</label>
+      <div class="search-form__inputs-wrap--md-sm search-form__location--md-sm">
+        <div class="search-form__location-wrap--md-sm">
+          <div class="search-form__location-icon--md-sm">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="search-form__location-input--md-sm">
+            <input
+                    class="search-form__input-location--md-sm"
+                    type="text"
+                    name="city"
+                    id="city-md"
+                    title="Your destination or hotel name"
+                    required
+            />
+            <label for="city-md">Your destination or hotel name</label>
+          </div>
+        </div>
       </div>
-      <div class="search-form__input-wrap--md-sm search-form__wrap-checkIn--md-sm">
+      <div class="search-form__inputs-wrap--md-sm search-form__wrap-check--md-sm">
         <input
-                class="search-form__input-checkIn--md-sm"
+                class="search-form__input-check--md-sm"
                 type="text"
                 name="date"
                 id="check-in"
@@ -123,9 +130,9 @@
         />
         <label for="check-in">Check-in</label>
       </div>
-      <div class="search-form__input-wrap--md-sm search-form__wrap-checkOut--md-sm">
+      <div class="search-form__inputs-wrap--md-sm search-form__wrap-check--md-sm">
         <input
-                class="search-form__input-checkOut--md-sm"
+                class="search-form__input-check--md-sm"
                 type="text"
                 name="date"
                 id="check-out"
@@ -134,7 +141,7 @@
         />
         <label for="check-out">Check-out</label>
       </div>
-      <div class="search-form__input-wrap--md-sm search-form__wrap-options--md-sm">
+      <div class="search-form__inputs-wrap--md-sm search-form__wrap-options--md-sm">
         <div class="search-form__options-inputs">
           <div class="search-form__options-input--md-sm">
             <input
@@ -171,7 +178,7 @@
           </div>
         </div>
       </div>
-      <div class="search-form__input-wrap--md-sm search-form__wrap-button--md-sm">
+      <div class="search-form__inputs-wrap--md-sm search-form__wrap-button--md-sm">
         <input
                 class="search-form__button-search--md-sm"
                 type="button"
