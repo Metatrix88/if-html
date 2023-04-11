@@ -621,7 +621,7 @@ h2:after {
   }
 
   .search-form__wrap-city--md-sm {
-    align-content: center;
+    /*align-content: center;*/
     grid-column: 1/3;
     width: 100%;
   }
@@ -649,22 +649,38 @@ h2:after {
   }
 
   .search-form__properties-inputs {
-    position: relative;
+    display: flex;
   }
 
+  .search-form__adults--md-sm {
+    position: relative;
+    width: 33.33%;
+  }
 
   .search-form__input-adults--md-sm {
-    width: 33%;
+    width: 100%;
     padding: 0 16px;
     border-radius: 6px;
   }
 
-  .search-form__input-children--md-sm {
-    width: 33%;
-    padding: 0 16px;
+  .search-form__children--md-sm {
+    position: relative;
+    width: 33.33%;
   }
+
+  .search-form__input-children--md-sm {
+    width: 100%;
+    padding: 0 16px;
+    border-radius: 6px;
+  }
+
+  .search-form__rooms--md-sm {
+    position: relative;
+    width: 33.33%;
+  }
+
   .search-form__input-rooms--md-sm {
-    width: 33%;
+    width: 100%;
     padding: 0 16px;
     border-radius: 6px;
   }
@@ -682,10 +698,6 @@ h2:after {
     font-size: 22px;
     color: var(--general-white-color);
   }
-
-
-
-
 
   .search-form__input-wrap--md-sm > label {
     position: absolute;
@@ -715,14 +727,17 @@ h2:after {
 
   .search-form__input-city--md-sm:focus ~ label,
   .search-form__input-city--md-sm:not(:focus):valid ~ label {
-    top: -24px;
-    color: var(--general-white-color);
+    top: 16px;
+    color: var(--text-color);
     opacity: 1;
   }
 
-  .search-form__properties-inputs > label {
+  .search-form__adults--md-sm > label,
+  .search-form__children--md-sm > label,
+  .search-form__rooms--md-sm > label {
     position: absolute;
-    top: -10%;
+    top: -50%;
+    left: 16px;
     transform: translateY(-50%);
     transition: all 0.3s;
     pointer-events: all;
@@ -730,48 +745,13 @@ h2:after {
     font-weight: 400;
   }
 
-  .search-form__properties-inputs > label{
-    left: 228px;
-  }
-
-  .search-form__properties-inputs > label:nth-child(2) {
-    left: 16px;
-  }
-
-  .search-form__properties-inputs > label:last-child {
-    left: 436px;
-  }
-
   .search-form__input-adults--md-sm:focus ~ label,
   .search-form__input-children--md-sm:focus ~ label,
-  .search-form__input-rooms--md-sm:focus ~ label,
-  .search-form__input-adults--md-sm:not(:focus):valid ~ label,
-  .search-form__input-children--md-sm:not(:focus):valid ~ label,
-  .search-form__input-rooms--md-sm:not(:focus):valid ~ label {
+  .search-form__input-rooms--md-sm:focus ~ label {
     top: -16px;
     color: var(--text-color);
     opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 
   .col-md-1 {
     width: var(--col-width);
@@ -993,7 +973,6 @@ h2:after {
     padding: 8px;
   }
 
-
   .search-form__input-wrap--md-sm {
     height: 48px;
     border-radius: 4px;
@@ -1013,13 +992,17 @@ h2:after {
 
   .search-form__input-adults--md-sm {
     padding: 0 8px;
+    border-radius: 4px;
   }
 
   .search-form__input-children--md-sm {
     padding: 0 8px;
+    border-radius: 4px;
   }
+
   .search-form__input-rooms--md-sm {
     padding: 0 8px;
+    border-radius: 4px;
   }
 
   .search-form__button-search--md-sm {
@@ -1027,15 +1010,10 @@ h2:after {
     font-size: 19px;
   }
 
-
-
-
-
   .search-form__input-wrap--md-sm > label {
     left: 8px;
     font-size: 12px;
   }
-
 
   .search-form__input-checkIn--md-sm:focus ~ label,
   .search-form__input-checkOut--md-sm:focus ~ label,
@@ -1052,39 +1030,32 @@ h2:after {
 
   .search-form__input-city--md-sm:focus ~ label,
   .search-form__input-city--md-sm:not(:focus):valid ~ label {
-    top: -20px;
+    top: 12px;
+    color: var(--text-color);
+    opacity: 1;
   }
 
-  .search-form__properties-inputs > label {
-    font-size: 12px;
-  }
 
-  .search-form__properties-inputs > label{
-    left: 116px;
-  }
-
-  .search-form__properties-inputs > label:nth-child(2) {
+  .search-form__adults--md-sm > label,
+  .search-form__children--md-sm > label,
+  .search-form__rooms--md-sm > label {
+    position: absolute;
+    top: -50%;
     left: 8px;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    pointer-events: all;
+    font-size: 12px;
+    font-weight: 400;
   }
 
-  .search-form__properties-inputs > label:last-child {
-    left: 216px;
+  .search-form__input-adults--md-sm:focus ~ label,
+  .search-form__input-children--md-sm:focus ~ label,
+  .search-form__input-rooms--md-sm:focus ~ label {
+    top: -16px;
+    color: var(--text-color);
+    opacity: 1;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .col-sm-1 {
     width: var(--col-width);
