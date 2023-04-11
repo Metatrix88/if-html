@@ -676,7 +676,7 @@ h2:after {
     border-radius: 6px;
   }
 
-  .search-form__options-input--md-sm:after {
+  .search-form__options-input--md-sm:nth-child(-n+2):after {
     content: "";
     position: absolute;
     left: 100%;
@@ -988,7 +988,7 @@ h2:after {
     border-radius: 4px;
   }
 
-  .search-form__options-input--md-sm:after {
+  .search-form__options-input--md-sm:nth-child(-n+2):after {
     height: 32px;
   }
 
