@@ -718,6 +718,7 @@ h2:after {
   .search-form__button-search--md-sm {
     background-color: var(--primary-color);
     height: 56px;
+    padding: 0;
     border-radius: 6px;
     font-weight: 500;
     font-size: 22px;
@@ -1011,6 +1012,7 @@ h2:after {
     border-radius: 4px;
   }
 
+
   .search-form__wrap-checkIn--md-sm {
     padding: 8px 8px;
   }
@@ -1027,18 +1029,30 @@ h2:after {
     border-radius: 4px;
   }
 
+  .search-form__adults--md-sm {
+    height: 48px;
+    padding: 8px 8px;
+  }
+
   .search-form__input-adults--md-sm {
-    padding: 0 8px;
     border-radius: 4px;
+  }
+
+  .search-form__children--md-sm {
+    height: 48px;
+    padding: 8px 8px;
   }
 
   .search-form__input-children--md-sm {
-    padding: 0 8px;
     border-radius: 4px;
   }
 
+  .search-form__rooms--md-sm {
+    height: 48px;
+    padding: 8px 8px;
+  }
+
   .search-form__input-rooms--md-sm {
-    padding: 0 8px;
     border-radius: 4px;
   }
 
@@ -1056,7 +1070,7 @@ h2:after {
   .search-form__input-checkOut--md-sm:focus ~ label,
   .search-form__input-checkIn--md-sm:not(:focus):valid ~ label,
   .search-form__input-checkOut--md-sm:not(:focus):valid ~ label {
-    top: 12px;
+    top: 8px;
     color: var(--text-color);
     opacity: 1;
   }
@@ -1077,7 +1091,7 @@ h2:after {
   .search-form__children--md-sm > label,
   .search-form__rooms--md-sm > label {
     position: absolute;
-    top: -50%;
+    top: 30%;
     left: 8px;
     transform: translateY(-50%);
     transition: all 0.3s;
@@ -1089,7 +1103,7 @@ h2:after {
   .search-form__input-adults--md-sm:focus ~ label,
   .search-form__input-children--md-sm:focus ~ label,
   .search-form__input-rooms--md-sm:focus ~ label {
-    top: -16px;
+    top: 8px;
     color: var(--text-color);
     opacity: 1;
   }
