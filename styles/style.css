@@ -1070,7 +1070,7 @@ h2:after {
   .search-form__input-checkOut--md-sm:focus ~ label,
   .search-form__input-checkIn--md-sm:not(:focus):valid ~ label,
   .search-form__input-checkOut--md-sm:not(:focus):valid ~ label {
-    top: 8px;
+    top: 12px;
     color: var(--text-color);
     opacity: 1;
   }
@@ -1103,7 +1103,7 @@ h2:after {
   .search-form__input-adults--md-sm:focus ~ label,
   .search-form__input-children--md-sm:focus ~ label,
   .search-form__input-rooms--md-sm:focus ~ label {
-    top: 8px;
+    top: 12px;
     color: var(--text-color);
     opacity: 1;
   }
