@@ -1,357 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="IT school from Belarus" />
-  <meta name="keywords" content="HTML, CSS, JavaScript, React" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <title>Lesson-9</title>
-  <link rel="icon" href="./images/favicons/icon-green-32.ico" />
-</head>
-<body>
-<header class="header">
-  <div class="header__wrapper lg-2-col container">
-    <svg class="header__logo">
-      <use href="./images/svg/sprite.svg#logo"></use>
-    </svg>
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li class="header__item">
-          <a class="header__link" href="#">Stays</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Attractions</a>
-        </li>
-      </ul>
-      <div class="header__buttons">
-        <button class="header__button" type="button">
-          <svg class="header__img-night">
-            <use href="./images/svg/sprite.svg#night"></use>
-          </svg>
-        </button>
-        <button class="header__button" type="button">
-          <svg class="header__img-login">
-            <use href="./images/svg/sprite.svg#login"></use>
-          </svg>
-        </button>
-        <button class="header__button" type="button">
-          <svg class="header__img-menu">
-            <use href="./images/svg/sprite.svg#menu"></use>
-          </svg>
-        </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="IT school from Belarus" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Lesson-11</title>
+    <link rel="icon" href="./images/favicons/icon-green-32.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper lg-2-col container">
+        <svg class="header__logo">
+          <use href="./images/svg/sprite.svg#logo"></use>
+        </svg>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a class="header__link" href="#">Stays</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Attractions</a>
+            </li>
+          </ul>
+          <div class="header__buttons">
+            <button class="header__button" type="button">
+              <svg class="header__img-night">
+                <use href="./images/svg/sprite.svg#night"></use>
+              </svg>
+            </button>
+            <button class="header__button" type="button">
+              <svg class="header__img-login">
+                <use href="./images/svg/sprite.svg#login"></use>
+              </svg>
+            </button>
+            <button class="header__button" type="button">
+              <svg class="header__img-menu">
+                <use href="./images/svg/sprite.svg#menu"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header>
+    </header>
+    <main>
+      <section class="top-section">
+        <div class="container top-section__title-wrap">
+          <h1 class="top-section__title">
+            Discover stays to&nbsp;live,&nbsp;work or just relax
+          </h1>
+        </div>
 
-<section class="top-section">
-  <div class="container top-section__title-wrap">
-    <h1 class="top-section__title">
-      Discover stays to&nbsp;live,&nbsp;work or just relax
-    </h1>
-  </div>
-
-  <div class="container">
-    <form class="lg-4-col search-form">
-      <div class="search-form__input-wrap">
-        <input
+        <div class="container">
+          <form class="lg-4-col search-form">
+            <div class="search-form__input-wrap">
+              <input
                 class="search-form__input-city"
                 type="text"
                 name="city"
                 id="city"
                 title="Your destination or hotel name"
                 required
-        />
-        <label for="city">Your destination or hotel name</label>
-      </div>
-      <div class="search-form__input-wrap">
-        <input
+              />
+              <label for="city">Your destination or hotel name</label>
+            </div>
+            <div class="search-form__input-wrap">
+              <input
                 class="search-form__input-date"
                 type="text"
                 name="date"
                 id="date"
                 title="Check-in — Check-out"
                 required
-        />
-        <label for="date">Check-in — Check-out</label>
-      </div>
-      <div class="search-form__input-wrap">
-        <input
+              />
+              <label for="date">Check-in — Check-out</label>
+            </div>
+            <div class="search-form__input-wrap">
+              <input
                 class="search-form__input-adults"
                 type="text"
                 name="adults"
                 id="adults"
                 placeholder="2 Adults — 0 Children — 1 Room"
                 title="2 Adults — 0 Children — 1 Room"
-        />
-      </div>
-      <div class="search-form__button">
-        <input
+              />
+            </div>
+            <div class="search-form__button">
+              <input
                 class="search-form__button-search"
                 type="button"
                 value="Search"
                 title="search"
-        />
-      </div>
-    </form>
-  </div>
+              />
+            </div>
+          </form>
+        </div>
 
-  <div class="container">
-    <form class="md-2-col sm-2-col search-form--md-sm">
-      <div class="search-form__inputs-wrap--md-sm search-form__location--md-sm">
-        <div class="search-form__location-wrap--md-sm">
-          <div class="search-form__location-icon--md-sm">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <div class="search-form__location-input--md-sm">
-            <input
+        <div class="container">
+          <form class="md-2-col sm-2-col search-form--md-sm">
+            <div
+              class="search-form__inputs-wrap--md-sm search-form__location--md-sm"
+            >
+              <div class="search-form__location-wrap--md-sm">
+                <div class="search-form__location-icon--md-sm">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="search-form__location-input--md-sm">
+                  <input
                     class="search-form__input-location--md-sm"
                     type="text"
                     name="city"
                     id="city-md"
                     title="Your destination or hotel name"
                     required
-            />
-            <label for="city-md">Your destination or hotel name</label>
-          </div>
-        </div>
-      </div>
-      <div class="search-form__inputs-wrap--md-sm search-form__wrap-check--md-sm">
-        <input
+                  />
+                  <label for="city-md">Your destination or hotel name</label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="search-form__inputs-wrap--md-sm search-form__wrap-check--md-sm"
+            >
+              <input
                 class="search-form__input-check--md-sm"
                 type="text"
                 name="date"
                 id="check-in"
                 title="Check-in"
                 required
-        />
-        <label for="check-in">Check-in</label>
-      </div>
-      <div class="search-form__inputs-wrap--md-sm search-form__wrap-check--md-sm">
-        <input
+              />
+              <label for="check-in">Check-in</label>
+            </div>
+            <div
+              class="search-form__inputs-wrap--md-sm search-form__wrap-check--md-sm"
+            >
+              <input
                 class="search-form__input-check--md-sm"
                 type="text"
                 name="date"
                 id="check-out"
                 title="Check-out"
                 required
-        />
-        <label for="check-out">Check-out</label>
-      </div>
-      <div class="search-form__inputs-wrap--md-sm search-form__wrap-options--md-sm">
-        <div class="search-form__options-inputs">
-          <div class="search-form__options-input--md-sm">
-            <input
+              />
+              <label for="check-out">Check-out</label>
+            </div>
+            <div
+              class="search-form__inputs-wrap--md-sm search-form__wrap-options--md-sm"
+            >
+              <div class="search-form__options-inputs">
+                <div class="search-form__options-input--md-sm">
+                  <input
                     class="search-form__input-option--md-sm"
                     type="text"
                     name="adults"
                     id="adults-md"
                     title="Adults"
                     required
-            />
-            <label for="adults-md">Adults</label>
-          </div>
-          <div class="search-form__options-input--md-sm">
-            <input
+                  />
+                  <label for="adults-md">Adults</label>
+                </div>
+                <div class="search-form__options-input--md-sm">
+                  <input
                     class="search-form__input-option--md-sm"
                     type="text"
                     name="children"
                     id="children"
                     title="Children"
                     required
-            />
-            <label for="children">Children</label>
-          </div>
-          <div class="search-form__options-input--md-sm">
-            <input
+                  />
+                  <label for="children">Children</label>
+                </div>
+                <div class="search-form__options-input--md-sm">
+                  <input
                     class="search-form__input-option--md-sm"
                     type="text"
                     name="rooms"
                     id="rooms"
                     title="Rooms"
                     required
-            />
-            <label for="rooms">Rooms</label>
-          </div>
-        </div>
-      </div>
-      <div class="search-form__inputs-wrap--md-sm search-form__wrap-button--md-sm">
-        <input
+                  />
+                  <label for="rooms">Rooms</label>
+                </div>
+              </div>
+            </div>
+            <div
+              class="search-form__inputs-wrap--md-sm search-form__wrap-button--md-sm"
+            >
+              <input
                 class="search-form__button-search--md-sm"
                 type="button"
                 value="Search"
                 title="search"
-        />
-      </div>
-    </form>
-  </div>
+              />
+            </div>
+          </form>
+        </div>
 
-  <div class="container top-section__download-wrap">
-    <svg class="top-section__google-play">
-      <use href="./images/svg/sprite.svg#google"></use>
-    </svg>
-    <svg class="top-section__app-store">
-      <use href="./images/svg/sprite.svg#app"></use>
-    </svg>
-  </div>
-</section>
+        <div class="container top-section__download-wrap">
+          <svg class="top-section__google-play">
+            <use href="./images/svg/sprite.svg#google"></use>
+          </svg>
+          <svg class="top-section__app-store">
+            <use href="./images/svg/sprite.svg#app"></use>
+          </svg>
+        </div>
+      </section>
 
-<section class="container offer">
-  <h2 class="offer__title">What do we offer</h2>
-  <div class="row offer__wrap-cards">
-    <div class="col-lg-3 col-md-6 col-sm-4">
-      <div class="offer__card">
-        <svg class="offer__img">
-          <use href="./images/svg/sprite.svg#headset"></use>
-        </svg>
-        <h3 class="offer__subtitle">Support 24/7</h3>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-4">
-      <div class="offer__card">
-        <svg class="offer__img">
-          <use href="./images/svg/sprite.svg#forum"></use>
-        </svg>
-        <h3 class="offer__subtitle">Communicate directly</h3>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-4">
-      <div class="offer__card">
-        <svg class="offer__img">
-          <use href="./images/svg/sprite.svg#devices"></use>
-        </svg>
-        <h3 class="offer__subtitle">Book online</h3>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-4">
-      <div class="offer__card">
-        <svg class="offer__img">
-          <use href="./images/svg/sprite.svg#thumb-up"></use>
-        </svg>
-        <h3 class="offer__subtitle">Real guest reviews</h3>
-      </div>
-    </div>
-  </div>
-</section>
+      <section class="container offer">
+        <h2 class="offer__title">What do we offer</h2>
+        <div class="row offer__wrap-cards">
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="offer__card">
+              <svg class="offer__img">
+                <use href="./images/svg/sprite.svg#headset"></use>
+              </svg>
+              <h3>Support 24/7</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="offer__card">
+              <svg class="offer__img">
+                <use href="./images/svg/sprite.svg#forum"></use>
+              </svg>
+              <h3>Communicate directly</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="offer__card">
+              <svg class="offer__img">
+                <use href="./images/svg/sprite.svg#devices"></use>
+              </svg>
+              <h3>Book online</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="offer__card">
+              <svg class="offer__img">
+                <use href="./images/svg/sprite.svg#thumb-up"></use>
+              </svg>
+              <h3>Real guest reviews</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="container apartments">
-  <h2 class="apartments__title">Homes guests loves</h2>
-  <div class="row apartments__wrap-cards">
-    <div class="col-lg-3 col-md-6 col-sm-3">
-      <div class="apartments__card">
-        <img class="apartments__img" src="./images/jpg/hotel-leopold.jpg" alt="Hotel Leopold">
-        <a class="apartments__link" href="#">Hotel Leopold</a>
-        <h3 class="apartments__subtitle">Saint Petersburg, Russia</h3>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-3">
-      <div class="apartments__card">
-        <img class="apartments__img" src="./images/jpg/apartment-sunshine.jpg" alt="Apartment Sunshine">
-        <a class="apartments__link" href="#">Apartment Sunshine</a>
-        <h3 class="apartments__subtitle">Santa  Cruz de Tenerife, Spain</h3>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none">
-      <div class="apartments__card">
-        <img class="apartments__img" src="./images/jpg/villa-kunerad.jpg" alt="Villa Kunerad">
-        <a class="apartments__link" href="#">Villa Kunerad</a>
-        <h3 class="apartments__subtitle">Vysokie Tatry, Slowakia</h3>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none">
-      <div class="apartments__card">
-        <img class="apartments__img" src="./images/jpg/hostel-friendship.jpg" alt="Hostel Friendship">
-        <a class="apartments__link" href="#">Hostel Friendship</a>
-        <h3 class="apartments__subtitle">Berlin, Germany</h3>
-      </div>
-    </div>
-  </div>
-</section>
+      <section class="container apartments">
+        <h2 class="apartments__title">Homes guests loves</h2>
+        <div class="row apartments__wrap-cards">
+          <div class="col-lg-3 col-md-6 col-sm-3">
+            <div class="apartments__card">
+              <img
+                class="apartments__img"
+                src="./images/jpg/hotel-leopold.jpg"
+                alt="Hotel Leopold"
+              />
+              <a class="apartments__link" href="#">Hotel Leopold</a>
+              <h3 class="apartments__subtitle">Saint Petersburg, Russia</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-3">
+            <div class="apartments__card">
+              <img
+                class="apartments__img"
+                src="./images/jpg/apartment-sunshine.jpg"
+                alt="Apartment Sunshine"
+              />
+              <a class="apartments__link" href="#">Apartment Sunshine</a>
+              <h3 class="apartments__subtitle">
+                Santa Cruz de Tenerife, Spain
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none">
+            <div class="apartments__card">
+              <img
+                class="apartments__img"
+                src="./images/jpg/villa-kunerad.jpg"
+                alt="Villa Kunerad"
+              />
+              <a class="apartments__link" href="#">Villa Kunerad</a>
+              <h3 class="apartments__subtitle">Vysokie Tatry, Slowakia</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none">
+            <div class="apartments__card">
+              <img
+                class="apartments__img"
+                src="./images/jpg/hostel-friendship.jpg"
+                alt="Hostel Friendship"
+              />
+              <a class="apartments__link" href="#">Hostel Friendship</a>
+              <h3 class="apartments__subtitle">Berlin, Germany</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="container destinations" >
-<h2 class="destinations__title">The best destinations</h2>
-  <div class="row">
-    <div class="col-lg-12 col-md-12">
-      <form action="#" method="#"  class="destinations__form ">
-        <button class="button destinations__button-regions" type="menu">Regions</button>
-        <button class="button destinations__button-cities" type="menu">Cities</button>
-        <button class="button destinations__button-places" type="menu">Places of interest</button>
-      </form>
-    </div>
-  </div>
+      <section class="container destinations">
+        <h2 class="destinations__title">The best destinations</h2>
+        <div class="row destinations__wrap-form">
+          <div class="col-lg-12 col-md-12 col-sm-6">
+            <form action="#" method="#" class="destinations__form">
+              <button class="button destinations__button-regions" type="menu">
+                Regions
+              </button>
+              <button class="button destinations__button-cities" type="menu">
+                Cities
+              </button>
+              <button class="button destinations__button-places" type="menu">
+                Places <span class="none-md-sm">of interest</span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="row destinations__wrap-cards">
+          <div class="col-lg-3 col-md-6 col-sm-3 destinations__card">
+            <div class="destinations__wrap-img">
+              <img class="destinations__img" src="./images/jpg/maldives.jpg" alt="Maldives">
+              <button class="button destinations__button-book" type="menu">Book now</button>
+            </div>
+            <a class="destinations__link" href="#">Maldives</a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-3 destinations__card">
+            <div class="destinations__wrap-img">
+              <img class="destinations__img" src="./images/jpg/spain.jpg" alt="Spain">
+              <button class="button destinations__button-book" type="menu">Book now</button>
+            </div>
+            <a class="destinations__link" href="#">Spain</a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none destinations__card">
+            <div class="destinations__wrap-img">
+              <img class="destinations__img" src="./images/jpg/norway.jpg" alt="Norway">
+              <button class="button destinations__button-book" type="menu">Book now</button>
+            </div>
+            <a class="destinations__link" href="#">Norway</a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none destinations__card">
+            <div class="destinations__wrap-img">
+              <img class="destinations__img" src="./images/jpg/island.jpg" alt="Island">
+              <button class="button destinations__button-book" type="menu">Book now</button>
+            </div>
+            <a class="destinations__link" href="#">Island</a>
+          </div>
+        </div>
 
-</section>
-<footer class="footer">
-  <div class="container">
-    <div class="footer__logo-wrap col-md-12 col-sm-6 _center">
-      <svg class="footer__logo">
-        <use href="./images/svg/sprite.svg#logo"></use>
-      </svg>
-    </div>
-    <div class="row footer-wrap">
-      <div class="col-lg-4 col-md-4 col-sm-2 _right">
-        <ul class="footer__list">
-          <li class="footer__item footer__item-title">
-            <a class="footer__link" href="#">About</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">How Triphouse works</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Careers</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Privacy</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Terms</a>
-          </li>
-        </ul>
+      </section>
+
+      <section class="container">
+        <div class="sing-up">
+          <div class="sing-up__logo">
+            <svg class="sing-up__svg">
+              <use href="./images/svg/sprite.svg#sing-up"></use>
+            </svg>
+            <svg class="sing-up__logo-sm">
+              <use href="./images/svg/sprite.svg#sing-up-logo-sm"></use>
+            </svg>
+          </div>
+          <div class="sing-up__wrap-sm">
+            <h3 class="sing-up__title">Sign up <span class="sing-up__part-title">in the app</span> and get 20% off your first booking</h3>
+            <button class="button sing-up__button" type="menu"><span class="sing-up__button-lg-md">Sign up</span><span class="sing-up__button-sm">Install</span></button>
+          </div>
+          <span class="sing-up__close">&#x2715</span>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo-wrap col-md-12 col-sm-6 _center">
+          <svg class="footer__logo">
+            <use href="./images/svg/sprite.svg#logo"></use>
+          </svg>
+        </div>
+        <div class="row footer-wrap">
+          <div class="col-lg-4 col-md-4 col-sm-2 _right">
+            <ul class="footer__list">
+              <li class="footer__item footer__item-title">
+                <a class="footer__link" href="#">About</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">How Triphouse works</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Terms</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-2 _center">
+            <ul class="footer__list">
+              <li class="footer__item footer__item-title">
+                <a class="footer__link" href="#">Property types</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Guest houses</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Hotels</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Apartments</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Villas</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Holiday homes</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Hostels</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-2 _left">
+            <ul class="footer__list">
+              <li class="footer__item footer__item-title">
+                <a class="footer__link" href="#">Support</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact Customer Service</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="col-md-12 col-sm-6 _center footer__copyright">
+          © 2022 Triphouse, Inc. All rights reserved
+        </p>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-2 _center">
-        <ul class="footer__list">
-          <li class="footer__item footer__item-title">
-            <a class="footer__link" href="#">Property types</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Guest houses</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Hotels</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Apartments</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Villas</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Holiday homes</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Hostels</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-2 _left">
-        <ul class="footer__list">
-          <li class="footer__item footer__item-title">
-            <a class="footer__link" href="#">Support</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">Contact Customer Service</a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <p class="col-md-12 col-sm-6 _center footer__copyright">© 2022 Triphouse, Inc. All rights reserved</p>
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>
