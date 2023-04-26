@@ -60,7 +60,7 @@
           <form class="lg-4-col search-form">
             <div class="search-form__input-wrap">
               <input
-                class="search-form__input-city"
+                class="search-form__input search-form__input--city"
                 type="text"
                 name="city"
                 id="city"
@@ -71,7 +71,7 @@
             </div>
             <div class="search-form__input-wrap">
               <input
-                class="search-form__input-date"
+                class="search-form__input"
                 type="text"
                 name="date"
                 id="date"
@@ -82,7 +82,7 @@
             </div>
             <div class="search-form__input-wrap">
               <input
-                class="search-form__input-adults"
+                class="search-form__input"
                 type="text"
                 name="adults"
                 id="adults"
@@ -104,7 +104,7 @@
         <div class="container">
           <form class="md-2-col sm-2-col search-form--md-sm">
             <div
-              class="search-form__inputs-wrap--md-sm search-form__location--md-sm"
+              class="search-form__inputs-wrap--md-sm search-form__wrap-location--md-sm"
             >
               <div class="search-form__location-wrap--md-sm">
                 <div class="search-form__location-icon--md-sm">
@@ -424,12 +424,12 @@
                   <p class="review__price">From 250 USD</p>
                 </div>
                 <div class="review__card-content">
-                  <div class="review__wrap_links">
+                  <div class="review__wrap-links">
                     <div class="review__links">
-                      <a class="review__link-name" href="#"
+                      <a class="review__link review__link--name" href="#"
                         >Ubud Bali Resort&SPA</a
                       >
-                      <a class="review__link-geo" href="#">Bali, Indonesia</a>
+                      <a class="review__link" href="#">Bali, Indonesia</a>
                     </div>
                     <div class="review__rating">
                       <div class="review__number">9,4</div>
@@ -458,12 +458,6 @@
                     staff. All of the people are incredibly helpful and generous
                     with their time and advice.
                   </p>
-                  <div class="review__sm-carousel">
-                    <div class="review__sm-cirсle"></div>
-                    <div class="review__sm-cirсle"></div>
-                    <div class="review__sm-cirсle"></div>
-                    <div class="review__sm-cirсle"></div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -480,10 +474,12 @@
                   <p class="review__price">From 40 USD</p>
                 </div>
                 <div class="review__card-content">
-                  <div class="review__wrap_links">
+                  <div class="review__wrap-links">
                     <div class="review__links">
-                      <a class="review__link-name" href="#">King Kong Hostel</a>
-                      <a class="review__link-geo" href="#"
+                      <a class="review__link review__link--name" href="#"
+                        >King Kong Hostel</a
+                      >
+                      <a class="review__link" href="#"
                         >Rotterdam, Netherlands</a
                       >
                     </div>
@@ -536,10 +532,12 @@
                   <p class="review__price">From 100 USD</p>
                 </div>
                 <div class="review__card-content">
-                  <div class="review__wrap_links">
+                  <div class="review__wrap-links">
                     <div class="review__links">
-                      <a class="review__link-name" href="#">Rokoko Hotel</a>
-                      <a class="review__link-geo" href="#">Ourika, Marocco</a>
+                      <a class="review__link review__link--name" href="#"
+                        >Rokoko Hotel</a
+                      >
+                      <a class="review__link" href="#">Ourika, Marocco</a>
                     </div>
                     <div class="review__rating">
                       <div class="review__number">9,1</div>
@@ -573,12 +571,18 @@
               </div>
             </div>
           </div>
+          <div class="review__sm-carousel">
+            <div class="review__sm-cirсle"></div>
+            <div class="review__sm-cirсle"></div>
+            <div class="review__sm-cirсle"></div>
+            <div class="review__sm-cirсle"></div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__logo-wrap col-md-12 col-sm-6 _center">
+        <div class="footer__logo-wrap">
           <svg class="footer__logo">
             <use href="./images/svg/sprite.svg#logo"></use>
           </svg>
@@ -642,8 +646,8 @@
             </ul>
           </div>
         </div>
-        <p class="col-md-12 col-sm-6 _center footer__copyright">
-          © 2022 Triphouse, Inc. All rights reserved
+        <p class="footer__copyright">
+          &#169; 2022 Triphouse, Inc. All rights reserved
         </p>
       </div>
     </footer>
