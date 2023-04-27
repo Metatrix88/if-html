@@ -14,16 +14,18 @@
   <body>
     <header class="header">
       <div class="header__wrapper lg-2-col container">
-        <svg class="header__logo">
-          <use href="./images/svg/sprite.svg#logo"></use>
-        </svg>
+        <a href="#" class="header__logo">
+          <svg class="header__icon">
+            <use href="./images/svg/sprite.svg#logo" />
+          </svg>
+        </a>
         <nav class="header__nav">
           <ul class="header__menu">
             <li class="header__item">
-              <a class="header__link" href="#">Stays</a>
+              <a class="header__link" href="#" target="_blank">Stays</a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">Attractions</a>
+              <a class="header__link" href="#" target="_blank">Attractions</a>
             </li>
           </ul>
           <div class="header__buttons">
@@ -46,7 +48,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="top-section">
         <div class="container top-section__title-wrap">
           <h1 class="top-section__title">
@@ -58,29 +60,31 @@
           <form class="lg-4-col search-form">
             <div class="search-form__input-wrap">
               <input
-                class="search-form__input-city"
+                class="search-form__input search-form__input--city"
                 type="text"
                 name="city"
                 id="city"
                 title="Your destination or hotel name"
+                value="New York"
                 required
               />
               <label for="city">Your destination or hotel name</label>
             </div>
             <div class="search-form__input-wrap">
               <input
-                class="search-form__input-date"
+                class="search-form__input"
                 type="text"
                 name="date"
                 id="date"
                 title="Check-in — Check-out"
+                value="Tue 15 Sept — Sat 19 Sept"
                 required
               />
               <label for="date">Check-in — Check-out</label>
             </div>
             <div class="search-form__input-wrap">
               <input
-                class="search-form__input-adults"
+                class="search-form__input"
                 type="text"
                 name="adults"
                 id="adults"
@@ -88,21 +92,14 @@
                 title="2 Adults — 0 Children — 1 Room"
               />
             </div>
-            <div class="search-form__button">
-              <input
-                class="search-form__button-search"
-                type="button"
-                value="Search"
-                title="search"
-              />
-            </div>
+            <button class="search-form__button-search">Search</button>
           </form>
         </div>
 
         <div class="container">
           <form class="md-2-col sm-2-col search-form--md-sm">
             <div
-              class="search-form__inputs-wrap--md-sm search-form__location--md-sm"
+              class="search-form__element-wrap--md-sm search-form__wrap-location--md-sm"
             >
               <div class="search-form__location-wrap--md-sm">
                 <div class="search-form__location-icon--md-sm">
@@ -122,7 +119,7 @@
               </div>
             </div>
             <div
-              class="search-form__inputs-wrap--md-sm search-form__wrap-check--md-sm"
+              class="search-form__element-wrap--md-sm search-form__wrap-check--md-sm"
             >
               <input
                 class="search-form__input-check--md-sm"
@@ -130,12 +127,13 @@
                 name="date"
                 id="check-in"
                 title="Check-in"
+                value="Tue 15 Sept 2020"
                 required
               />
               <label for="check-in">Check-in</label>
             </div>
             <div
-              class="search-form__inputs-wrap--md-sm search-form__wrap-check--md-sm"
+              class="search-form__element-wrap--md-sm search-form__wrap-check--md-sm"
             >
               <input
                 class="search-form__input-check--md-sm"
@@ -143,12 +141,13 @@
                 name="date"
                 id="check-out"
                 title="Check-out"
+                value="Sat 19 Sept 2020"
                 required
               />
               <label for="check-out">Check-out</label>
             </div>
             <div
-              class="search-form__inputs-wrap--md-sm search-form__wrap-options--md-sm"
+              class="search-form__element-wrap--md-sm search-form__wrap-options--md-sm"
             >
               <div class="search-form__options-inputs">
                 <div class="search-form__options-input--md-sm">
@@ -158,6 +157,7 @@
                     name="adults"
                     id="adults-md"
                     title="Adults"
+                    value="2"
                     required
                   />
                   <label for="adults-md">Adults</label>
@@ -169,6 +169,7 @@
                     name="children"
                     id="children"
                     title="Children"
+                    value="0"
                     required
                   />
                   <label for="children">Children</label>
@@ -180,32 +181,28 @@
                     name="rooms"
                     id="rooms"
                     title="Rooms"
+                    value="1"
                     required
                   />
                   <label for="rooms">Rooms</label>
                 </div>
               </div>
             </div>
-            <div
-              class="search-form__inputs-wrap--md-sm search-form__wrap-button--md-sm"
-            >
-              <input
-                class="search-form__button-search--md-sm"
-                type="button"
-                value="Search"
-                title="search"
-              />
-            </div>
+            <button class="search-form__element-wrap--md-sm search-form__button-search--md-sm">Search</button>
           </form>
         </div>
 
         <div class="container top-section__download-wrap">
-          <svg class="top-section__google-play">
-            <use href="./images/svg/sprite.svg#google"></use>
-          </svg>
-          <svg class="top-section__app-store">
-            <use href="./images/svg/sprite.svg#app"></use>
-          </svg>
+          <a href="#" class="top-section__download" target="_blank">
+            <svg class="top-section__icon-google">
+              <use href="./images/svg/sprite.svg#google"></use>
+            </svg>
+          </a>
+          <a href="#" class="top-section__download" target="_blank">
+            <svg class="top-section__icon-apple">
+              <use href="./images/svg/sprite.svg#app"></use>
+            </svg>
+          </a>
         </div>
       </section>
 
@@ -254,10 +251,12 @@
             <div class="apartments__card">
               <img
                 class="apartments__img"
-                src="./images/jpg/hotel-leopold.jpg"
+                src="images/jpg/apartments/hotel-leopold.jpg"
                 alt="Hotel Leopold"
               />
-              <a class="apartments__link" href="#">Hotel Leopold</a>
+              <a class="apartments__link" href="#" target="_blank"
+                >Hotel Leopold</a
+              >
               <h3 class="apartments__subtitle">Saint Petersburg, Russia</h3>
             </div>
           </div>
@@ -265,10 +264,12 @@
             <div class="apartments__card">
               <img
                 class="apartments__img"
-                src="./images/jpg/apartment-sunshine.jpg"
+                src="images/jpg/apartments/apartment-sunshine.jpg"
                 alt="Apartment Sunshine"
               />
-              <a class="apartments__link" href="#">Apartment Sunshine</a>
+              <a class="apartments__link" href="#" target="_blank"
+                >Apartment Sunshine</a
+              >
               <h3 class="apartments__subtitle">
                 Santa Cruz de Tenerife, Spain
               </h3>
@@ -278,10 +279,12 @@
             <div class="apartments__card">
               <img
                 class="apartments__img"
-                src="./images/jpg/villa-kunerad.jpg"
+                src="images/jpg/apartments/villa-kunerad.jpg"
                 alt="Villa Kunerad"
               />
-              <a class="apartments__link" href="#">Villa Kunerad</a>
+              <a class="apartments__link" href="#" target="_blank"
+                >Villa Kunerad</a
+              >
               <h3 class="apartments__subtitle">Vysokie Tatry, Slowakia</h3>
             </div>
           </div>
@@ -289,10 +292,12 @@
             <div class="apartments__card">
               <img
                 class="apartments__img"
-                src="./images/jpg/hostel-friendship.jpg"
+                src="images/jpg/apartments/hostel-friendship.jpg"
                 alt="Hostel Friendship"
               />
-              <a class="apartments__link" href="#">Hostel Friendship</a>
+              <a class="apartments__link" href="#" target="_blank"
+                >Hostel Friendship</a
+              >
               <h3 class="apartments__subtitle">Berlin, Germany</h3>
             </div>
           </div>
@@ -319,37 +324,64 @@
         <div class="row destinations__wrap-cards">
           <div class="col-lg-3 col-md-6 col-sm-3 destinations__card">
             <div class="destinations__wrap-img">
-              <img class="destinations__img" src="./images/jpg/maldives.jpg" alt="Maldives">
-              <button class="button destinations__button-book" type="menu">Book now</button>
+              <img
+                class="destinations__img"
+                src="images/jpg/destinations/maldives.jpg"
+                alt="Maldives"
+              />
+              <button class="button destinations__button-book" type="menu">
+                Book now
+              </button>
             </div>
-            <a class="destinations__link" href="#">Maldives</a>
+            <a class="destinations__link" href="#" target="_blank">Maldives</a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-3 destinations__card">
             <div class="destinations__wrap-img">
-              <img class="destinations__img" src="./images/jpg/spain.jpg" alt="Spain">
-              <button class="button destinations__button-book" type="menu">Book now</button>
+              <img
+                class="destinations__img"
+                src="images/jpg/destinations/spain.jpg"
+                alt="Spain"
+              />
+              <button class="button destinations__button-book" type="menu">
+                Book now
+              </button>
             </div>
-            <a class="destinations__link" href="#">Spain</a>
+            <a class="destinations__link" href="#" target="_blank">Spain</a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none destinations__card">
+          <div
+            class="col-lg-3 col-md-6 col-sm-3 _mobile-none destinations__card"
+          >
             <div class="destinations__wrap-img">
-              <img class="destinations__img" src="./images/jpg/norway.jpg" alt="Norway">
-              <button class="button destinations__button-book" type="menu">Book now</button>
+              <img
+                class="destinations__img"
+                src="images/jpg/destinations/norway.jpg"
+                alt="Norway"
+              />
+              <button class="button destinations__button-book" type="menu">
+                Book now
+              </button>
             </div>
-            <a class="destinations__link" href="#">Norway</a>
+            <a class="destinations__link" href="#" target="_blank">Norway</a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none destinations__card">
+          <div
+            class="col-lg-3 col-md-6 col-sm-3 _mobile-none destinations__card"
+          >
             <div class="destinations__wrap-img">
-              <img class="destinations__img" src="./images/jpg/island.jpg" alt="Island">
-              <button class="button destinations__button-book" type="menu">Book now</button>
+              <img
+                class="destinations__img"
+                src="images/jpg/destinations/island.jpg"
+                alt="Island"
+              />
+              <button class="button destinations__button-book" type="menu">
+                Book now
+              </button>
             </div>
-            <a class="destinations__link" href="#">Island</a>
+            <a class="destinations__link" href="#" target="_blank">Island</a>
           </div>
         </div>
-
       </section>
 
-      <section class="container">
+      <section class="container sing">
         <div class="sing-up">
           <div class="sing-up__logo">
             <svg class="sing-up__svg">
@@ -360,16 +392,209 @@
             </svg>
           </div>
           <div class="sing-up__wrap-sm">
-            <h3 class="sing-up__title">Sign up <span class="sing-up__part-title">in the app</span> and get 20% off your first booking</h3>
-            <button class="button sing-up__button" type="menu"><span class="sing-up__button-lg-md">Sign up</span><span class="sing-up__button-sm">Install</span></button>
+            <h3 class="sing-up__title">
+              Sign up <span class="sing-up__part-title">in the app</span> and
+              get 20% off your first booking
+            </h3>
+            <button class="button sing-up__button">
+              <span class="sing-up__button-lg-md">Sign up</span
+              ><span class="sing-up__button-sm">Install</span>
+            </button>
           </div>
-          <span class="sing-up__close">&#x2715</span>
+          <span class="sing-up__close">&#x2715;</span>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">
+            <span class="reviews__lg">Guests reviews</span
+            ><span class="reviews__sm">Reviews</span>
+          </h2>
+          <div class="row reviews__wrap-cards">
+            <div class="col-lg-4 col-md-6 col-sm-6 reviews__card">
+              <div class="review">
+                <div class="review__wrap-img">
+                  <img
+                    class="review__img"
+                    src="./images/jpg/reviews/ubud-bali.jpg"
+                    alt="ubud-bali"
+                  />
+                  <p class="review__price">From 250 USD</p>
+                </div>
+                <div class="review__card-content">
+                  <div class="review__wrap-links">
+                    <div class="review__links">
+                      <a
+                        class="review__link review__link--name"
+                        href="#"
+                        target="_blank"
+                        >Ubud Bali Resort&SPA</a
+                      >
+                      <a class="review__link" href="#" target="_blank"
+                        >Bali, Indonesia</a
+                      >
+                    </div>
+                    <div class="review__rating">
+                      <div class="review__number">9,4</div>
+                      <p class="review__number-review">1324 reviews</p>
+                    </div>
+                  </div>
+                  <div class="review__reviewer">
+                    <div class="review__wrap-icon">
+                      <svg class="review__icon">
+                        <use href="./images/svg/sprite.svg#review-icon" />
+                      </svg>
+                    </div>
+                    <div class="review__reviewer-info">
+                      <p class="review__reviewer-name">Hanna Ivanova</p>
+                      <div class="review__country">
+                        <svg class="review__country-flag">
+                          <use href="./images/svg/sprite.svg#ua-flag" />
+                        </svg>
+                        <p class="review__country-name">Ukraine</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Great location, really pleasant and clean rooms, but the
+                    thing that makes this such a good place to stay are the
+                    staff. All of the people are incredibly helpful and generous
+                    with their time and advice.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-6 reviews__card _review__sm-none"
+            >
+              <div class="review">
+                <div class="review__wrap-img">
+                  <img
+                    class="review__img"
+                    src="./images/jpg/reviews/king-kong.jpg"
+                    alt="king-kong"
+                  />
+                  <p class="review__price">From 40 USD</p>
+                </div>
+                <div class="review__card-content">
+                  <div class="review__wrap-links">
+                    <div class="review__links">
+                      <a
+                        class="review__link review__link--name"
+                        href="#"
+                        target="_blank"
+                        >King Kong Hostel</a
+                      >
+                      <a class="review__link" href="#" target="_blank"
+                        >Rotterdam, Netherlands</a
+                      >
+                    </div>
+                    <div class="review__rating">
+                      <div class="review__number">8,9</div>
+                      <p class="review__number-review">2016 reviews</p>
+                    </div>
+                  </div>
+                  <div class="review__reviewer">
+                    <div class="review__wrap-icon">
+                      <svg class="review__icon">
+                        <use href="./images/svg/sprite.svg#review-icon" />
+                      </svg>
+                    </div>
+                    <div class="review__reviewer-info">
+                      <p class="review__reviewer-name">Adam Smith</p>
+                      <div class="review__country">
+                        <svg class="review__country-flag">
+                          <use href="./images/svg/sprite.svg#usa-flag" />
+                        </svg>
+                        <p class="review__country-name">USA</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    I've been in this hostel for a month and here is the best
+                    hostel of all
+                  </p>
+                  <p class="review__text">
+                    Excellent management of excellent and ethical staff and
+                    bedrooms Bathrooms are always clean and excellent
+                  </p>
+                  <p class="review__text">
+                    Most importantly, those who work here are kind and
+                    good-natured.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-6 reviews__card review__md-none"
+            >
+              <div class="review">
+                <div class="review__wrap-img">
+                  <img
+                    class="review__img"
+                    src="./images/jpg/reviews/ubud-bali.jpg"
+                    alt="ubud-bali"
+                  />
+                  <p class="review__price">From 100 USD</p>
+                </div>
+                <div class="review__card-content">
+                  <div class="review__wrap-links">
+                    <div class="review__links">
+                      <a
+                        class="review__link review__link--name"
+                        href="#"
+                        target="_blank"
+                        >Rokoko Hotel</a
+                      >
+                      <a class="review__link" href="#" target="_blank"
+                        >Ourika, Marocco</a
+                      >
+                    </div>
+                    <div class="review__rating">
+                      <div class="review__number">9,1</div>
+                      <p class="review__number-review">815 reviews</p>
+                    </div>
+                  </div>
+                  <div class="review__reviewer">
+                    <div class="review__wrap-icon">
+                      <svg class="review__icon">
+                        <use href="./images/svg/sprite.svg#review-icon" />
+                      </svg>
+                    </div>
+                    <div class="review__reviewer-info">
+                      <p class="review__reviewer-name">Anika Messer</p>
+                      <div class="review__country">
+                        <svg class="review__country-flag">
+                          <use href="./images/svg/sprite.svg#de-flag" />
+                        </svg>
+                        <p class="review__country-name">Germany</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review__text">
+                    Efficient, friendly, professional, and appropriately
+                    attentive. Great hotel in a great location. Easy access to
+                    all the surrounding historical sites. Staff is fantastic.
+                    Will definitely stay at this location during my next stay in
+                    Marocco.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review__sm-carousel">
+            <div class="review__sm-cirсle"></div>
+            <div class="review__sm-cirсle"></div>
+            <div class="review__sm-cirсle"></div>
+            <div class="review__sm-cirсle"></div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__logo-wrap col-md-12 col-sm-6 _center">
+        <div class="footer__logo-wrap">
           <svg class="footer__logo">
             <use href="./images/svg/sprite.svg#logo"></use>
           </svg>
@@ -378,63 +603,73 @@
           <div class="col-lg-4 col-md-4 col-sm-2 _right">
             <ul class="footer__list">
               <li class="footer__item footer__item-title">
-                <a class="footer__link" href="#">About</a>
+                <a class="footer__link" href="#" target="_blank">About</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">How Triphouse works</a>
+                <a class="footer__link" href="#" target="_blank"
+                  >How Triphouse works</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Careers</a>
+                <a class="footer__link" href="#" target="_blank">Careers</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Privacy</a>
+                <a class="footer__link" href="#" target="_blank">Privacy</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Terms</a>
+                <a class="footer__link" href="#" target="_blank">Terms</a>
               </li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-2 _center">
             <ul class="footer__list">
               <li class="footer__item footer__item-title">
-                <a class="footer__link" href="#">Property types</a>
+                <a class="footer__link" href="#" target="_blank"
+                  >Property types</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Guest houses</a>
+                <a class="footer__link" href="#" target="_blank"
+                  >Guest houses</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Hotels</a>
+                <a class="footer__link" href="#" target="_blank">Hotels</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Apartments</a>
+                <a class="footer__link" href="#" target="_blank">Apartments</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Villas</a>
+                <a class="footer__link" href="#" target="_blank">Villas</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Holiday homes</a>
+                <a class="footer__link" href="#" target="_blank"
+                  >Holiday homes</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Hostels</a>
+                <a class="footer__link" href="#" target="_blank">Hostels</a>
               </li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-2 _left">
             <ul class="footer__list">
               <li class="footer__item footer__item-title">
-                <a class="footer__link" href="#">Support</a>
+                <a class="footer__link" href="#" target="_blank">Support</a>
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">Contact Customer Service</a>
+                <a class="footer__link" href="#" target="_blank"
+                  >Contact Customer Service</a
+                >
               </li>
               <li class="footer__item">
-                <a class="footer__link" href="#">FAQ</a>
+                <a class="footer__link" href="#" target="_blank">FAQ</a>
               </li>
             </ul>
           </div>
         </div>
-        <p class="col-md-12 col-sm-6 _center footer__copyright">
-          © 2022 Triphouse, Inc. All rights reserved
+        <p class="footer__copyright">
+          &#169; 2022 Triphouse, Inc. All rights reserved
         </p>
       </div>
     </footer>
