@@ -73,11 +73,6 @@ h3 {
   margin: 0 auto;
 }
 
-.button {
-  text-align: center;
-  border-radius: var(--basic-radius);
-}
-
 .lg-1-col {
   grid-template-columns: 1fr;
 }
@@ -192,6 +187,55 @@ h3 {
   padding-right: calc(var(--unit) / 2);
 }
 
+.button {
+  text-align: center;
+  border-radius: var(--basic-radius);
+}
+
+.logo {
+  display: inline-block;
+  max-width: 205px;
+  height: 40px;
+  fill: var(--primary-color);
+}
+
+.logo__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.list {
+  display: flex;
+  gap: 24px;
+  font-size: 24px;
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.button-img {
+  max-width: 40px;
+  height: 40px;
+}
+
+.button-icon {
+  fill: var(--general-white-color);
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.button-icon:hover,
+.button-img:focus .button-icon {
+  fill: var(--accent-color);
+}
+
+
+
+
+
 .header {
   position: absolute;
   margin-left: auto;
@@ -199,46 +243,28 @@ h3 {
   margin-top: 50px;
   left: 0;
   right: 0;
-}
-
-.header__wrapper {
-  display: grid;
-  align-items: center;
   height: 46px;
 }
 
 .header__logo {
-  display: inline-block;
-  max-width: 205px;
-  height: 40px;
   margin-bottom: 6px;
 }
 
-.header__icon {
-  width: 100%;
-  height: 100%;
-  fill: var(--primary-color);
-}
-
-.header__nav {
+.header__menu {
   display: flex;
   justify-content: flex-end;
   gap: calc(var(--unit) * 3);
 }
 
-.header__menu {
-  display: flex;
-  font-size: 24px;
+.header__list {
+  height: 28px;
   margin-top: 6px;
   margin-bottom: 12px;
-  gap: 24px;
 }
 
 .header__link {
   position: relative;
   color: var(--general-white-color);
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .header__link:after {
@@ -262,32 +288,28 @@ h3 {
   gap: 24px;
 }
 
-.header__button:last-child {
-  display: none;
-}
-
-.header__img-night {
-  fill: var(--general-white-color);
-  width: 100%;
+.header__button-switch {
   max-width: 30px;
-  aspect-ratio: 1/1;
+  height: 30px;
   margin: 5px 0 11px;
 }
 
-.header__img-login,
-.header__img-menu {
-  fill: var(--general-white-color);
-  width: 100%;
-  max-width: 40px;
-  aspect-ratio: 1/1;
+.header__button-login {
   margin-bottom: 6px;
 }
 
-.header__img-night:hover,
-.header__img-login:hover,
-.header__img-menu:hover {
-  fill: var(--accent-color);
+.header__button-menu {
+  display: none;
 }
+
+
+
+
+
+
+
+
+
 
 .top-section {
   min-height: 100vh;
@@ -984,42 +1006,62 @@ input:placeholder-shown {
     grid-template-columns: repeat(12, 1fr);
   }
 
-  .header {
-    margin: 0;
+  .logo {
+    max-width: 150px;
+    height: 32px;
   }
 
-  .header__wrapper {
-    height: 64px;
+  .list {
+    gap: 16px;
+    font-size: 20px;
+  }
+
+
+
+  .header {
+    margin-top: 0;
+    height: 48px;
+    align-items: center;
   }
 
   .header__logo {
-    max-width: 150px;
-    height: 32px;
     margin: 0;
   }
 
-  .header__menu {
+  .header__list {
     display: none;
   }
 
   .header__buttons {
-    gap: calc(var(--unit) * 2);
+    align-items: center;
+    gap: 16px;
   }
 
-  .header__button:last-child {
+  .header__button-switch {
+    max-width: 25px;
+    height: 25px;
+    margin: 0;
+  }
+
+  .header__button-login {
+    max-width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+  }
+
+  .header__button-menu {
     display: block;
+    max-width: 30px;
+    height: 30px;
   }
 
-  .header__img-night {
-    max-width: 24px;
-    margin: 0;
-  }
 
-  .header__img-login,
-  .header__img-menu {
-    max-width: 32px;
-    margin: 0;
-  }
+
+
+
+
+
+
 
   .top-section {
     padding-top: 150px;
@@ -1495,18 +1537,6 @@ input:placeholder-shown {
     --basic-radius: 4px;
   }
 
-  .container {
-    max-width: 100%;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  h3 {
-    font-size: 15px;
-  }
-
   .sm-1-col {
     grid-template-columns: 1fr;
   }
@@ -1531,14 +1561,47 @@ input:placeholder-shown {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .header__wrapper {
-    height: 48px;
+  h2 {
+    font-size: 28px;
   }
 
-  .header__logo {
+  h3 {
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+
+  .logo {
     max-width: 122px;
     height: 24px;
   }
+
+  .list {
+    gap: 16px;
+    font-size: 15px;
+  }
+
+  .header__button-switch {
+    max-width: 16px;
+    height: 16px;
+  }
+
+  .header__button-login,
+  .header__button-menu {
+    max-width: 24px;
+    height: 24px;
+  }
+
+
+
+
+
+
+
+
 
   .header__img-night {
     max-width: 16px;
