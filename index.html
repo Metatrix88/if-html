@@ -126,7 +126,7 @@
                 </button>
                 <div class="laptop-form__input laptop-form__input-destination">
                   <input
-                    class="input input-focus"
+                    class="input input-laptop"
                     type="text"
                     name="destination"
                     id="destination"
@@ -143,7 +143,7 @@
             <div class="laptop-form__input-wrap">
               <div class="laptop-form__input">
                 <input
-                  class="input input-focus"
+                  class="input input-laptop"
                   type="text"
                   name="date"
                   id="check-in"
@@ -157,7 +157,7 @@
             <div class="laptop-form__input-wrap">
               <div class="laptop-form__input">
                 <input
-                  class="input input-focus"
+                  class="input input-laptop"
                   type="text"
                   name="date"
                   id="check-out"
@@ -173,7 +173,7 @@
               <div class="laptop-form__wrap-properties">
                 <div class="laptop-form__input laptop-form__input-properties">
                   <input
-                    class="input input-focus"
+                    class="input input-laptop"
                     type="text"
                     name="adults"
                     id="adults-md"
@@ -186,7 +186,7 @@
 
                 <div class="laptop-form__input laptop-form__input-properties">
                   <input
-                    class="input input-focus"
+                    class="input input-laptop"
                     type="text"
                     name="children"
                     id="children"
@@ -198,7 +198,7 @@
                 </div>
                 <div class="laptop-form__input laptop-form__input-properties">
                   <input
-                    class="input input-focus"
+                    class="input input-laptop"
                     type="text"
                     name="rooms"
                     id="rooms"
@@ -221,7 +221,8 @@
             href="#"
             class="mobile-app__link"
             target="_blank"
-            aria-label="Download the mobile app for android">
+            aria-label="Download the mobile app for android"
+          >
             <svg class="mobile-app__icon-google">
               <use href="./images/svg/sprite.svg#google" />
             </svg>
@@ -230,7 +231,8 @@
             href="#"
             class="mobile-app__link"
             target="_blank"
-            aria-label="Download the mobile app for apple">
+            aria-label="Download the mobile app for apple"
+          >
             <svg class="mobile-app__icon-apple">
               <use href="./images/svg/sprite.svg#app" />
             </svg>
@@ -240,107 +242,102 @@
 
       <section class="container offer">
         <h2 class="offer__title">What do we offer</h2>
-        <ul class="row offer__cards">
-          <li class="col-lg-3 col-md-6 col-sm-4">
-            <div class="offer__card">
+        <ul class="row">
+          <li class="col-lg-3 col-md-6 col-sm-6 offer__card">
               <svg class="offer__img">
                 <use href="./images/svg/sprite.svg#headset"></use>
               </svg>
               <h3 class="subtitle">Support 24/7</h3>
-            </div>
           </li>
-          <li class="col-lg-3 col-md-6 col-sm-4">
-            <div class="offer__card">
+          <li class="col-lg-3 col-md-6 col-sm-6 offer__card">
               <svg class="offer__img">
                 <use href="./images/svg/sprite.svg#forum"></use>
               </svg>
               <h3 class="subtitle">Communicate directly</h3>
-            </div>
           </li>
-          <li class="col-lg-3 col-md-6 col-sm-4">
-            <div class="offer__card">
+          <li class="col-lg-3 col-md-6 col-sm-6 offer__card">
               <svg class="offer__img">
                 <use href="./images/svg/sprite.svg#devices"></use>
               </svg>
               <h3 class="subtitle">Book online</h3>
-            </div>
           </li>
-          <li class="col-lg-3 col-md-6 col-sm-4">
-            <div class="offer__card">
+          <li class="col-lg-3 col-md-6 col-sm-6 offer__card">
               <svg class="offer__img">
                 <use href="./images/svg/sprite.svg#thumb-up"></use>
               </svg>
               <h3 class="subtitle">Real guest reviews</h3>
-            </div>
           </li>
         </ul>
       </section>
 
       <section class="container apartments">
         <h2 class="apartments__title">Homes guests loves</h2>
-        <div class="row apartments__wrap-cards">
-          <div class="col-lg-3 col-md-6 col-sm-3">
-            <div class="apartments__card">
-              <img
-                class="apartments__img"
-                src="images/jpg/apartments/hotel-leopold.jpg"
-                alt="Hotel Leopold"
-              />
-              <a class="apartments__link" href="#" target="_blank"
-                >Hotel Leopold</a
-              >
-              <h3 class="apartments__subtitle">Saint Petersburg, Russia</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-3">
-            <div class="apartments__card">
-              <img
-                class="apartments__img"
-                src="images/jpg/apartments/apartment-sunshine.jpg"
-                alt="Apartment Sunshine"
-              />
-              <a class="apartments__link" href="#" target="_blank"
-                >Apartment Sunshine</a
-              >
-              <h3 class="apartments__subtitle">
-                Santa Cruz de Tenerife, Spain
-              </h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none">
-            <div class="apartments__card">
-              <img
-                class="apartments__img"
-                src="images/jpg/apartments/villa-kunerad.jpg"
-                alt="Villa Kunerad"
-              />
-              <a class="apartments__link" href="#" target="_blank"
-                >Villa Kunerad</a
-              >
-              <h3 class="apartments__subtitle">Vysokie Tatry, Slowakia</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-3 _mobile-none">
-            <div class="apartments__card">
-              <img
-                class="apartments__img"
-                src="images/jpg/apartments/hostel-friendship.jpg"
-                alt="Hostel Friendship"
-              />
-              <a class="apartments__link" href="#" target="_blank"
-                >Hostel Friendship</a
-              >
-              <h3 class="apartments__subtitle">Berlin, Germany</h3>
-            </div>
-          </div>
-        </div>
+        <ul class="row">
+          <li class="col-lg-3 col-md-6 col-sm-3 apartments__card">
+            <img
+              class="images apartments__img"
+              src="images/jpg/apartments/hotel-leopold.jpg"
+              alt="Hotel Leopold"
+            />
+            <a class="link apartments__link" href="#" target="_blank"
+              >Hotel Leopold</a
+            >
+            <h3 class="subtitle apartments__subtitle">
+              Saint Petersburg, Russia
+            </h3>
+          </li>
+          <li class="col-lg-3 col-md-6 col-sm-3 apartments__card">
+            <img
+              class="images apartments__img"
+              src="images/jpg/apartments/apartment-sunshine.jpg"
+              alt="Apartment Sunshine"
+            />
+            <a class="link apartments__link" href="#" target="_blank"
+              >Apartment Sunshine</a
+            >
+            <h3 class="subtitle apartments__subtitle">
+              Santa Cruz de Tenerife, Spain
+            </h3>
+          </li>
+          <li class="col-lg-3 col-md-6 col-sm-3 apartments__card _mobile-none">
+            <img
+              class="images apartments__img"
+              src="images/jpg/apartments/villa-kunerad.jpg"
+              alt="Villa Kunerad"
+            />
+            <a class="link apartments__link" href="#" target="_blank"
+              >Villa Kunerad</a
+            >
+            <h3 class="subtitle apartments__subtitle">
+              Vysokie Tatry, Slowakia
+            </h3>
+          </li>
+          <li class="col-lg-3 col-md-6 col-sm-3 apartments__card _mobile-none">
+            <img
+              class="images apartments__img"
+              src="images/jpg/apartments/hostel-friendship.jpg"
+              alt="Hostel Friendship"
+            />
+            <a class="link apartments__link" href="#" target="_blank"
+              >Hostel Friendship</a
+            >
+            <h3 class="subtitle apartments__subtitle">Berlin, Germany</h3>
+          </li>
+        </ul>
+        <button
+            class="button-img apartments__button"
+            type="button"
+            aria-label="Next apartaments"
+        >
+          <svg class="apartments__button-icon">
+            <use href="./images/svg/sprite.svg#arrow" />
+          </svg>
+        </button>
       </section>
 
       <section class="container destinations">
         <h2 class="destinations__title">The best destinations</h2>
-        <div class="row destinations__wrap-form">
-          <div class="col-lg-12 col-md-12 col-sm-6">
-            <form action="#" method="#" class="destinations__form">
+            <form action="#" method="#" class="form destinations__form">
               <button class="button destinations__button-regions" type="menu">
                 Regions
               </button>
@@ -348,13 +345,11 @@
                 Cities
               </button>
               <button class="button destinations__button-places" type="menu">
-                Places <span class="none-md-sm">of interest</span>
+                Places <span class="name-button--none">of interest</span>
               </button>
             </form>
-          </div>
-        </div>
-        <div class="row destinations__wrap-cards">
-          <div class="col-lg-3 col-md-6 col-sm-3 destinations__card">
+        <ul class="row destinations__wrap-cards">
+          <li class="col-lg-3 col-md-6 col-sm-3 destinations__card">
             <div class="destinations__wrap-img">
               <img
                 class="destinations__img"
@@ -365,9 +360,9 @@
                 Book now
               </button>
             </div>
-            <a class="destinations__link" href="#" target="_blank">Maldives</a>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-3 destinations__card">
+            <a class="link destinations__link" href="#" target="_blank">Maldives</a>
+          </li>
+          <li class="col-lg-3 col-md-6 col-sm-3 destinations__card">
             <div class="destinations__wrap-img">
               <img
                 class="destinations__img"
@@ -378,9 +373,9 @@
                 Book now
               </button>
             </div>
-            <a class="destinations__link" href="#" target="_blank">Spain</a>
-          </div>
-          <div
+            <a class="link destinations__link" href="#" target="_blank">Spain</a>
+          </li>
+          <li
             class="col-lg-3 col-md-6 col-sm-3 _mobile-none destinations__card"
           >
             <div class="destinations__wrap-img">
@@ -393,9 +388,9 @@
                 Book now
               </button>
             </div>
-            <a class="destinations__link" href="#" target="_blank">Norway</a>
-          </div>
-          <div
+            <a class="link destinations__link" href="#" target="_blank">Norway</a>
+          </li>
+          <li
             class="col-lg-3 col-md-6 col-sm-3 _mobile-none destinations__card"
           >
             <div class="destinations__wrap-img">
@@ -408,9 +403,18 @@
                 Book now
               </button>
             </div>
-            <a class="destinations__link" href="#" target="_blank">Island</a>
-          </div>
-        </div>
+            <a class="link destinations__link" href="#" target="_blank">Island</a>
+          </li>
+        </ul>
+        <button
+            class="button-img destinations__button-next"
+            type="button"
+            aria-label="Next destinations"
+        >
+          <svg class="destinations__button-icon">
+            <use href="./images/svg/sprite.svg#arrow" />
+          </svg>
+        </button>
       </section>
 
       <section class="container sing">
