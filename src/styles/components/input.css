@@ -1,0 +1,47 @@
+input {
+  border: 0;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  outline: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+
+.input {
+  width: 100%;
+  padding: 0 24px;
+  background: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  /*For mobile tablets:*/
+  .input {
+    padding: 0;
+    height: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  /*For mobile phones:*/
+}
