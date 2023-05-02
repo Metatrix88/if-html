@@ -222,6 +222,31 @@ h2 {
   height: 40px;
 }
 
+.button-next {
+  position: absolute;
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+  background-color: var(--border-light-color);
+  border-radius: 50%;
+  box-shadow: 0 4px rgba(0, 0, 0, 25%);
+}
+
+.button-next:hover,
+.button-next:focus {
+  background-color: var(--accent-color);
+}
+
+.button-next__icon {
+  fill: none;
+  width: 10px;
+  height: 100%;
+}
+
+
+
+
+
 .input {
   width: 100%;
   padding: 0 24px;
@@ -528,24 +553,9 @@ h2 {
   color: var(--secondary-text-color);
 }
 
-.apartments__button {
-  position: absolute;
-  background-color: var(--border-light-color);
-  border-radius: 50%;
-  box-shadow: 0 4px rgba(0, 0, 0, 25%);
+.apartments__button-next {
   top: 48.5%;
   right: 84px;
-}
-
-.apartments__button-icon {
-  fill: none;
-  width: 10px;
-  height: 100%;
-}
-
-.apartments__button:hover,
-.apartments__button:focus {
-  background-color: var(--accent-color);
 }
 
 .destinations {
@@ -637,43 +647,22 @@ h2 {
 }
 
 .destinations__button-next {
-  position: absolute;
-  background-color: var(--border-light-color);
-  border-radius: 50%;
-  box-shadow: 0 4px rgba(0, 0, 0, 25%);
   left: 50%;
   bottom: 121px;
   transform: translateX(-50%);
 }
 
-.destinations__button-icon {
-  fill: none;
+.destinations__button-next--transform {
   transform: rotate(90deg);
-  width: 10px;
-  height: 100%;
 }
 
-.destinations__button-next:hover,
-.destinations__button-next:focus {
-  background-color: var(--accent-color);
-}
-
-.sing-up {
+.sing-up__wrap {
   position: relative;
   background-color: var(--bg-color);
   padding: 52px 24px;
   display: flex;
   align-items: center;
   gap: 24px;
-}
-
-.sing-up__close {
-  position: absolute;
-  color: var(--secondary-text-color);
-  top: 20px;
-  right: 24px;
-  font-size: 34px;
-  cursor: pointer;
 }
 
 .sing-up__logo {
@@ -686,13 +675,13 @@ h2 {
   align-items: center;
 }
 
-.sing-up__svg {
+.sing-up__icon-lg {
   width: 50px;
   height: 45px;
   fill: var(--primary-color);
 }
 
-.sing-up__logo-sm {
+.sing-up__icon-sm {
   display: none;
 }
 
@@ -716,43 +705,35 @@ h2 {
   color: var(--primary-color);
 }
 
+.sing-up__button-sm {
+  display: none;
+}
+
 .sing-up__button:hover {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
 
-.sing-up__button-sm {
-  display: none;
-}
-
-.reviews__wrap-cards {
-  position: relative;
-  font-size: 18px;
-}
-
-.reviews__wrap-cards:before {
+.sing-up__button-close {
   position: absolute;
-  content: "";
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--border-light-color);
-  background-image: url("../images/svg/arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  left: 98%;
-  top: 24%;
-  transform: rotate(0deg);
-  box-shadow: 0 4px rgba(0, 0, 0, 25%);
-  cursor: pointer;
-  z-index: 1;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  right: 24px;
 }
 
-.reviews__wrap-cards:hover:before {
-  background-color: var(--accent-color);
+.sing-up__icon-close {
+  width: 24px;
+  height: 24px;
+  fill: var(--secondary-text-color);
+}
+
+.sing-up__icon-close:hover {
+  fill: var(--primary-dark-color);
 }
 
 .reviews {
+  position: relative;
   padding-top: var(--block-space);
   padding-bottom: var(--block-space);
 }
@@ -761,25 +742,25 @@ h2 {
   margin-bottom: var(--title-bottom);
 }
 
-.reviews__sm {
+.reviews__title-sm {
   display: none;
 }
 
-.reviews__card {
-  align-items: stretch;
-  display: flex;
+.reviews__wrap-cards {
+  font-size: 18px;
 }
 
-.review {
-  background-color: var(--bg-color);
+.reviews__card {
+  display: flex;
+  flex-direction: column;
 }
 
 .review__wrap-img {
-  display: flex;
   position: relative;
 }
 
 .review__img {
+  display: block;
   max-width: 400px;
   width: 100%;
   aspect-ratio: 1/1;
@@ -798,7 +779,11 @@ h2 {
 }
 
 .review__card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   padding: 24px;
+  background-color: var(--bg-color);
 }
 
 .review__wrap-links {
@@ -814,11 +799,10 @@ h2 {
 }
 
 .review__link {
-  text-decoration: none;
-  color: var(--primary-color);
+  font-size: 18px;
 }
 
-.review__link-name {
+.review__link--bold {
   font-weight: 500;
 }
 
@@ -893,6 +877,11 @@ h2 {
 
 .review__country-name {
   color: var(--secondary-text-color);
+}
+
+.reviews__button-next {
+  top: 39.5%;
+  right: 85px;
 }
 
 .review__sm-carousel {
@@ -1091,6 +1080,15 @@ h2 {
     height: 30px;
   }
 
+  .button-next {
+    max-width: 28px;
+    height: 28px;
+  }
+
+  .button-next__icon {
+    width: 7px;
+  }
+
   .input {
     padding: 0;
     height: 22px;
@@ -1286,13 +1284,9 @@ h2 {
     margin-bottom: calc(var(--unit) * 2);
   }
 
-  .apartments__button {
+  .apartments__button-next {
     top: 50%;
     right: 30px;
-  }
-
-  .apartments__button-icon {
-    width: 9px;
   }
 
   .destinations__form {
@@ -1325,12 +1319,12 @@ h2 {
     left: 93%;
   }
 
-  .destinations__button-icon {
+  .destinations__button-next--transform {
     transform: rotate(0deg);
-    width: 9px;
   }
 
-  .sing-up {
+
+  .sing-up__wrap {
     padding: calc(var(--unit) * 6) calc(var(--unit) * 2);
     gap: calc(var(--unit) * 2);
   }
@@ -1349,34 +1343,8 @@ h2 {
     height: 32px;
   }
 
-  .sing-up__close {
-    top: 16px;
-    right: 16px;
-    font-size: 22px;
-  }
-
   .reviews__wrap-cards {
-    position: relative;
-    margin-bottom: 0;
     font-size: 16px;
-  }
-
-  .reviews__wrap-cards:before {
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--border-light-color);
-    background-image: url("../images/svg/arrow.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    left: 96%;
-    top: 24%;
-    transform: rotate(0deg);
-    box-shadow: 0 4px rgba(0, 0, 0, 25%);
-    cursor: pointer;
-    z-index: 1;
   }
 
   .review__price {
@@ -1391,8 +1359,21 @@ h2 {
     margin-bottom: calc(var(--unit) * 2);
   }
 
+  .review__link {
+    font-size: 16px;
+  }
+
   .review__rating {
     gap: var(--unit);
+  }
+
+  .review__number {
+    width: 40px;
+    height: 27px;
+  }
+
+  .review__number-review {
+    font-size: 14px;
   }
 
   .review__wrap-icon {
@@ -1407,6 +1388,11 @@ h2 {
 
   .review__reviewer-info {
     gap: var(--unit);
+  }
+
+  .reviews__button-next {
+    top: 41.5%;
+    right: 39px;
   }
 
   .review__md-none {
@@ -1550,6 +1536,10 @@ h2 {
     height: 28px;
   }
 
+  .button-next__icon {
+    width: 6px;
+  }
+
   .images {
     max-width: 328px;
   }
@@ -1588,7 +1578,7 @@ h2 {
     flex-direction: column;
   }
 
-  .sing {
+  .sing-up {
     order: 6;
   }
 
@@ -1699,13 +1689,9 @@ h2 {
     font-size: 12px;
   }
 
-  .apartments__button {
+  .apartments__button-next {
     top: 49%;
     right: 7px;
-  }
-
-  .apartments__button-icon {
-    width: 6px;
   }
 
   ._mobile-none {
@@ -1736,11 +1722,9 @@ h2 {
     left: 95%;
   }
 
-  .destinations__button-icon {
-    width: 6px;
-  }
 
-  .sing-up {
+
+  .sing-up__wrap {
     position: static;
     background-color: var(--general-white-color);
     padding: calc(var(--unit) * 3) 0;
@@ -1749,11 +1733,17 @@ h2 {
     gap: calc(var(--unit) * 2);
   }
 
-  .sing-up__close {
+  .sing-up__button-close {
     position: static;
-    color: var(--secondary-text-color);
-    font-size: 20px;
     order: 1;
+    width: 16px;
+    height: 16px;
+  }
+
+  .sing-up__icon-close {
+    width: 16px;
+    height: 16px;
+    fill: var(--secondary-text-color);
   }
 
   .sing-up__logo {
@@ -1768,11 +1758,11 @@ h2 {
     order: 2;
   }
 
-  .sing-up__svg {
+  .sing-up__icon-lg {
     display: none;
   }
 
-  .sing-up__logo-sm {
+  .sing-up__icon-sm {
     display: block;
     width: 53px;
     height: 11px;
@@ -1824,11 +1814,11 @@ h2 {
     background-color: var(--bg-color);
   }
 
-  .reviews__lg {
+  .reviews__title-lg {
     display: none;
   }
 
-  .reviews__sm {
+  .reviews__title-sm {
     display: block;
   }
 
@@ -1862,11 +1852,6 @@ h2 {
     gap: calc(var(--unit) / 2);
   }
 
-  .review__number {
-    width: 40px;
-    height: 27px;
-  }
-
   .review__number-review {
     font-size: 12px;
   }
@@ -1892,6 +1877,10 @@ h2 {
 
   .review__text {
     margin-bottom: calc(var(--unit) * 4);
+  }
+
+  .reviews__button-next {
+    display: none;
   }
 
   .review__sm-carousel {

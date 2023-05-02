@@ -325,11 +325,11 @@
           </li>
         </ul>
         <button
-            class="button-img apartments__button"
+            class="button-next apartments__button-next"
             type="button"
             aria-label="Next apartaments"
         >
-          <svg class="apartments__button-icon">
+          <svg class="button-next__icon">
             <use href="./images/svg/sprite.svg#arrow" />
           </svg>
         </button>
@@ -407,28 +407,28 @@
           </li>
         </ul>
         <button
-            class="button-img destinations__button-next"
+            class="button-next destinations__button-next"
             type="button"
             aria-label="Next destinations"
         >
-          <svg class="destinations__button-icon">
+          <svg class="button-next__icon destinations__button-next--transform">
             <use href="./images/svg/sprite.svg#arrow" />
           </svg>
         </button>
       </section>
 
-      <section class="container sing">
-        <div class="sing-up">
+      <section class="container sing-up">
+        <div class="sing-up__wrap">
           <div class="sing-up__logo">
-            <svg class="sing-up__svg">
+            <svg class="sing-up__icon-lg">
               <use href="./images/svg/sprite.svg#sing-up"></use>
             </svg>
-            <svg class="sing-up__logo-sm">
+            <svg class="sing-up__icon-sm">
               <use href="./images/svg/sprite.svg#sing-up-logo-sm"></use>
             </svg>
           </div>
           <div class="sing-up__wrap-sm">
-            <h3 class="sing-up__title">
+            <h3 class="subtitle sing-up__title">
               Sign up <span class="sing-up__part-title">in the app</span> and
               get 20% off your first booking
             </h3>
@@ -437,19 +437,21 @@
               ><span class="sing-up__button-sm">Install</span>
             </button>
           </div>
-          <span class="sing-up__close">&#x2715;</span>
+          <button class="sing-up__button-close" aria-label="close sing-up">
+            <svg class="sing-up__icon-close" >
+              <use href="./images/svg/sprite.svg#close"/>
+            </svg>
+          </button>
         </div>
       </section>
 
-      <section class="reviews">
-        <div class="container">
+      <section class="container reviews">
           <h2 class="reviews__title">
-            <span class="reviews__lg">Guests reviews</span
-            ><span class="reviews__sm">Reviews</span>
+            <span class="reviews__title-lg">Guests reviews</span
+            ><span class="reviews__title-sm">Reviews</span>
           </h2>
-          <div class="row reviews__wrap-cards">
-            <div class="col-lg-4 col-md-6 col-sm-6 reviews__card">
-              <div class="review">
+          <ul class="row reviews__wrap-cards">
+            <li class="col-lg-4 col-md-6 col-sm-6 reviews__card">
                 <div class="review__wrap-img">
                   <img
                     class="review__img"
@@ -462,12 +464,12 @@
                   <div class="review__wrap-links">
                     <div class="review__links">
                       <a
-                        class="review__link review__link--name"
+                        class="link review__link review__link--bold"
                         href="#"
                         target="_blank"
                         >Ubud Bali Resort&SPA</a
                       >
-                      <a class="review__link" href="#" target="_blank"
+                      <a class="link review__link" href="#" target="_blank"
                         >Bali, Indonesia</a
                       >
                     </div>
@@ -499,12 +501,8 @@
                     with their time and advice.
                   </p>
                 </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-6 reviews__card _review__sm-none"
-            >
-              <div class="review">
+            </li>
+            <li class="col-lg-4 col-md-6 col-sm-6 reviews__card _review__sm-none">
                 <div class="review__wrap-img">
                   <img
                     class="review__img"
@@ -517,12 +515,12 @@
                   <div class="review__wrap-links">
                     <div class="review__links">
                       <a
-                        class="review__link review__link--name"
+                        class="link review__link review__link--bold"
                         href="#"
                         target="_blank"
                         >King Kong Hostel</a
                       >
-                      <a class="review__link" href="#" target="_blank"
+                      <a class="link review__link" href="#" target="_blank"
                         >Rotterdam, Netherlands</a
                       >
                     </div>
@@ -560,12 +558,8 @@
                     good-natured.
                   </p>
                 </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 col-sm-6 reviews__card review__md-none"
-            >
-              <div class="review">
+            </li>
+            <li class="col-lg-4 col-md-6 col-sm-6 reviews__card review__md-none">
                 <div class="review__wrap-img">
                   <img
                     class="review__img"
@@ -578,12 +572,12 @@
                   <div class="review__wrap-links">
                     <div class="review__links">
                       <a
-                        class="review__link review__link--name"
+                        class="link review__link review__link--bold"
                         href="#"
                         target="_blank"
                         >Rokoko Hotel</a
                       >
-                      <a class="review__link" href="#" target="_blank"
+                      <a class="link review__link" href="#" target="_blank"
                         >Ourika, Marocco</a
                       >
                     </div>
@@ -616,16 +610,23 @@
                     Marocco.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
+          <button
+              class="button-next reviews__button-next"
+              type="button"
+              aria-label="Next reviews"
+          >
+            <svg class="button-next__icon">
+              <use href="./images/svg/sprite.svg#arrow" />
+            </svg>
+          </button>
           <div class="review__sm-carousel">
             <div class="review__sm-cirсle"></div>
             <div class="review__sm-cirсle"></div>
             <div class="review__sm-cirсle"></div>
             <div class="review__sm-cirсle"></div>
           </div>
-        </div>
       </section>
     </main>
     <footer class="footer">
