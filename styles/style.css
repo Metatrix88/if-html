@@ -243,10 +243,6 @@ h2 {
   height: 100%;
 }
 
-
-
-
-
 .input {
   width: 100%;
   padding: 0 24px;
@@ -895,11 +891,11 @@ h2 {
   padding-bottom: var(--block-space);
 }
 
-.footer__logo-wrap {
+.footer__logo {
   display: none;
 }
 
-.footer-wrap {
+.footer__nav {
   margin-bottom: 40px;
 }
 
@@ -1399,19 +1395,13 @@ h2 {
     display: none;
   }
 
-  .footer__logo-wrap {
-    display: block;
-    text-align: center;
-  }
-
   .footer__logo {
-    max-width: 150px;
-    height: 32px;
+    display: block;
+    margin: 0 auto 56px;
     fill: var(--general-white-color);
-    margin-bottom: calc(var(--unit) * 8);
   }
 
-  .footer-wrap {
+  .footer__nav {
     margin-bottom: 40px;
   }
 
@@ -1907,10 +1897,10 @@ h2 {
   .footer__logo {
     max-width: 98px;
     height: 19px;
-    margin-bottom: calc(var(--unit) * 5);
+    margin-bottom: 40px;
   }
 
-  .footer-wrap {
+  .footer__nav {
     margin-bottom: 32px;
   }
 
