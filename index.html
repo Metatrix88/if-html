@@ -6,68 +6,71 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, React" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
     <title>My project</title>
     <link rel="icon" href="src/images/favicons/icon-green-32.ico" />
   </head>
   <body>
-    <header class="header lg-2-col container">
+    <header class="container header lg-2-col">
       <a href="#" class="logo header__logo">
         <svg class="logo__icon">
           <use href="./src/images/svg/sprite.svg#logo" />
         </svg>
       </a>
-      <div class="header__menu">
-        <ul class="list header__list">
-          <li>
-            <a class="link header__link" href="#" target="_blank">Stays</a>
-          </li>
-          <li>
-            <a class="link header__link" href="#" target="_blank"
-              >Attractions</a
-            >
-          </li>
-        </ul>
-        <div class="header__buttons">
-          <button
-            class="button-img header__button-switch"
-            type="button"
-            aria-label="Screen Theme Switch"
-          >
-            <svg class="header__button-icon">
-              <use href="./src/images/svg/sprite.svg#night" />
-            </svg>
-          </button>
-          <button
-            class="button-img header__button-login"
-            type="button"
-            aria-label="Login"
-          >
-            <svg class="header__button-icon">
-              <use href="./src/images/svg/sprite.svg#login" />
-            </svg>
-          </button>
-          <button
-            class="button-img header__button-menu"
-            type="button"
-            aria-label="Menu"
-          >
-            <svg class="header__button-icon">
-              <use href="./src/images/svg/sprite.svg#menu" />
-            </svg>
-          </button>
-        </div>
-      </div>
+      <ul class="header__menu">
+        <li class="header__links">
+          <ul class="list">
+            <li>
+              <a class="link header__link" href="#">Stays</a>
+            </li>
+            <li>
+              <a class="link header__link" href="#">Attractions</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__buttons">
+          <ul class="list">
+            <li class="header__button-switch">
+              <button
+                class=""
+                type="button"
+                aria-label="Screen Theme Switch">
+                  <svg class="header__icon header__icon-switch">
+                    <use href="./src/images/svg/sprite.svg#night" />
+                  </svg>
+              </button>
+            </li>
+            <li class="header__button-login">
+              <button
+                  class=""
+                  type="button"
+                  aria-label="Login">
+                    <svg class="header__icon">
+                      <use href="./src/images/svg/sprite.svg#login" />
+                    </svg>
+              </button>
+            </li>
+            <li class="header__button-menu">
+              <button
+                  class=""
+                  type="button"
+                  aria-label="Menu">
+                    <svg class="header__icon">
+                      <use href="./src/images/svg/sprite.svg#menu" />
+                    </svg>
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </header>
     <main class="main">
       <section class="top-section">
         <div class="container">
-          <h1 class="top-section__title">
-            Discover stays to&nbsp;live,&nbsp;work or just relax
-          </h1>
-        </div>
-        <div class="container">
-          <form class="lg-4-col search-form--one desktop-form">
+            <h1 class="top-section__title">
+              Discover stays to&nbsp;live,&nbsp;work or just relax
+            </h1>
+          <form class="lg-4-col search-form--desktop desktop-form">
             <div class="desktop-form__input">
               <input
                 class="input desktop-form__input-city"
@@ -109,9 +112,8 @@
               Search
             </button>
           </form>
-        </div>
-        <div class="container">
-          <form class="md-2-col sm-2-col search-form--two laptop-form">
+
+          <form class="md-2-col sm-2-col search-form--laptop laptop-form">
             <div class="laptop-form__input-wrap laptop-form__input-col2">
               <div class="laptop-form__wrap-destination">
                 <button
@@ -214,8 +216,8 @@
               Search
             </button>
           </form>
-        </div>
-        <div class="container mobile-app">
+
+          <div class="mobile-app">
           <a
             href="#"
             class="mobile-app__link"
@@ -236,6 +238,7 @@
               <use href="./src/images/svg/sprite.svg#app" />
             </svg>
           </a>
+        </div>
         </div>
       </section>
 

@@ -4,7 +4,7 @@
 
 @media (max-width: 1024px) {
   /*For mobile tablets:*/
-  .search-form--two {
+  .search-form--laptop {
     display: grid;
     gap: calc(var(--unit) * 2);
     font-size: 18px;
@@ -95,7 +95,7 @@
 
 @media (max-width: 600px) {
   /*For mobile phones:*/
-  .search-form--two {
+  .search-form--laptop {
     display: grid;
     gap: var(--unit);
     font-size: 15px;
