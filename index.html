@@ -114,43 +114,37 @@
           </form>
 
           <form class="md-2-col sm-2-col search-form--laptop laptop-form">
-            <div class="laptop-form__input-wrap laptop-form__input-col2">
-              <div class="laptop-form__wrap-destination">
+            <div class="laptop-form__input-wrap laptop-form__input--full-width">
+              <div class="laptop-form__destination-wrap">
                 <button
-                  class="button-img laptop-form__button-destination"
-                  type="button"
-                  aria-label="Your destination or hotel name"
-                >
+                    class="laptop-form__button-destination"
+                    type="button"
+                    aria-label="Your destination or hotel name">
                   <svg class="laptop-form__button-icon">
-                    <use href=".src/images/svg/sprite.svg#search" />
+                    <use href="./src/images/svg/sprite.svg#search" />
                   </svg>
                 </button>
                 <div class="laptop-form__input laptop-form__input-destination">
                   <input
-                    class="input input-laptop"
-                    type="text"
-                    name="destination"
-                    id="destination"
-                    title="Your destination or hotel name"
-                    required
-                  />
-                  <label for="destination"
-                    >Your destination or hotel name</label
-                  >
+                      class="input input-laptop"
+                      type="text"
+                      name="destination"
+                      id="destination"
+                      title="Your destination or hotel name"
+                      required/>
+                  <label for="destination">Your destination or hotel name</label>
                 </div>
               </div>
             </div>
-
             <div class="laptop-form__input-wrap">
               <div class="laptop-form__input">
                 <input
-                  class="input input-laptop"
-                  type="text"
-                  name="date"
-                  id="check-in"
-                  title="Check-in"
-                  value="Tue 15 Sept 2020"
-                  required
+                    class="input input-laptop"
+                    type="text"
+                    name="date"
+                    id="check-in"
+                    title="Check-in"
+                    required
                 />
                 <label for="check-in">Check-in</label>
               </div>
@@ -158,20 +152,19 @@
             <div class="laptop-form__input-wrap">
               <div class="laptop-form__input">
                 <input
-                  class="input input-laptop"
-                  type="text"
-                  name="date"
-                  id="check-out"
-                  title="Check-out"
-                  value="Sat 19 Sept 2020"
-                  required
+                    class="input input-laptop"
+                    type="text"
+                    name="date"
+                    id="check-out"
+                    title="Check-out"
+                    required
                 />
                 <label for="check-out">Check-out</label>
               </div>
             </div>
 
-            <div class="laptop-form__input-wrap laptop-form__input-col2">
-              <div class="laptop-form__wrap-properties">
+            <div class="laptop-form__input-wrap laptop-form__input--full-width">
+              <div class="laptop-form__properties-wrap">
                 <div class="laptop-form__input laptop-form__input-properties">
                   <input
                     class="input input-laptop"
@@ -179,7 +172,6 @@
                     name="adults"
                     id="adults-md"
                     title="Adults"
-                    value="2"
                     required
                   />
                   <label for="adults-md">Adults</label>
@@ -192,7 +184,6 @@
                     name="children"
                     id="children"
                     title="Children"
-                    value="0"
                     required
                   />
                   <label for="children">Children</label>
@@ -204,7 +195,6 @@
                     name="rooms"
                     id="rooms"
                     title="Rooms"
-                    value="1"
                     required
                   />
                   <label for="rooms">Rooms</label>
@@ -217,28 +207,31 @@
             </button>
           </form>
 
-          <div class="mobile-app">
-          <a
-            href="#"
-            class="mobile-app__link"
-            target="_blank"
-            aria-label="Download the mobile app for android"
-          >
-            <svg class="mobile-app__icon-google">
-              <use href="./src/images/svg/sprite.svg#google" />
-            </svg>
-          </a>
-          <a
-            href="#"
-            class="mobile-app__link"
-            target="_blank"
-            aria-label="Download the mobile app for apple"
-          >
-            <svg class="mobile-app__icon-apple">
-              <use href="./src/images/svg/sprite.svg#app" />
-            </svg>
-          </a>
-        </div>
+          <ul class="mobile-app">
+            <li>
+              <a
+                  href="#"
+                  class="mobile-app__link"
+                  target="_blank"
+                  aria-label="Download the mobile app for android">
+                <svg class="mobile-app__icon-google">
+                  <use href="./src/images/svg/sprite.svg#google" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                  href="#"
+                  class="mobile-app__link"
+                  target="_blank"
+                  aria-label="Download the mobile app for apple"
+              >
+                <svg class="mobile-app__icon-apple">
+                  <use href="./src/images/svg/sprite.svg#app" />
+                </svg>
+              </a>
+            </li>
+        </ul>
         </div>
       </section>
 
