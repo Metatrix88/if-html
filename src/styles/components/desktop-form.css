@@ -1,6 +1,5 @@
 .search-form--desktop {
   border: 3px solid var(--border-light-color);
-  height: 64px;
   gap: 0;
   border-radius: var(--basic-radius);
   background-color: white;
@@ -16,12 +15,11 @@
 
 .desktop-form__input {
   position: relative;
-  height: calc(100% + 3px * 2);
 }
 
 .desktop-form__input > label {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 24px;
   transform: translateY(-50%);
   transition: all 0.3s;
@@ -29,13 +27,19 @@
 }
 
 .desktop-form__input-city {
+  border: 3px solid transparent;
+  border-radius: var(--basic-radius);
   margin-left: -3px;
   margin-top: -3px;
+  margin-bottom: -3px;
 }
 
 .desktop-form__input-date,
 .desktop-form__input-filter {
+  border: 3px solid transparent;
+  border-radius: var(--basic-radius);
   margin-top: -3px;
+  margin-bottom: -3px;
 }
 
 .desktop-form__input-city:hover,
@@ -43,6 +47,12 @@
 .desktop-form__input-filter:hover {
   border: 3px solid var(--accent-color);
   border-radius: var(--basic-radius);
+}
+
+.desktop-form__input-city:focus,
+.desktop-form__input-date:focus,
+.desktop-form__input-filter:focus {
+  border: 3px solid var(--accent-color);
 }
 
 .desktop-form__input-city:focus ~ label,
@@ -55,17 +65,16 @@
 }
 
 .desktop-form__button-search {
-  height: calc(100% + 3px * 2);
   font-weight: 500;
   margin-left: 3px;
   margin-top: -3px;
+  margin-bottom: -3px;
+  border: 3px solid var(--primary-color);
 }
 
 .desktop-form__button-search:hover,
 .desktop-form__button-search:focus {
-  background-color: var(--primary-dark-color);
   border: 3px solid var(--accent-color);
-  border-radius: var(--basic-radius);
 }
 
 @media (max-width: 1024px) {
