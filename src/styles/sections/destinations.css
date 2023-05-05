@@ -14,13 +14,15 @@
 
 .destinations__button-regions,
 .destinations__button-cities {
-  width: 100%;
   max-width: 192px;
+  border: 2px solid transparent;
+  line-height: 1.05;
 }
 
 .destinations__button-places {
-  width: 100%;
   max-width: 238px;
+  border: 2px solid transparent;
+  line-height: 1.05;
 }
 
 .destinations__form > button:hover {
@@ -81,9 +83,8 @@
   display: block;
 }
 
-.destinations__link:hover,
-.destinations__link:focus {
-  color: var(--accent-color);
+.destinations__subtitle {
+  color: var(--primary-color);
 }
 
 .destinations__button-next {
@@ -147,7 +148,6 @@
   .destinations__button-cities,
   .destinations__button-places {
     max-width: 98px;
-    height: 32px;
   }
 
   .destinations__wrap-cards {

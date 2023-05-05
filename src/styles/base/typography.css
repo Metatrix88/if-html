@@ -13,6 +13,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.16;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
@@ -31,11 +37,19 @@ h2 {
   h2 {
     font-size: 34px;
   }
+
+  h3 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 600px) {
   /*For mobile phones:*/
   h2 {
     font-size: 28px;
+  }
+
+  h3 {
+    font-size: 15px;
   }
 }
