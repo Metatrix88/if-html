@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-a, li {
+a,
+li {
   line-height: 0;
 }
-

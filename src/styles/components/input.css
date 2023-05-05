@@ -25,13 +25,13 @@ input:placeholder-shown {
 @media (max-width: 1024px) {
   /*For mobile tablets:*/
   .input {
-    padding: 28px 12px 6px
+    padding: 28px 12px 6px;
   }
 }
 
 @media (max-width: 600px) {
   /*For mobile phones:*/
   .input {
-    padding: 24px 8px 6px
+    padding: 24px 8px 6px;
   }
 }
