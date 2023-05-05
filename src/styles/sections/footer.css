@@ -46,6 +46,7 @@
   /*For mobile tablets:*/
   .footer__logo {
     display: block;
+    max-width: 150px;
     margin: 0 auto 56px;
     fill: var(--general-white-color);
   }
@@ -76,7 +77,6 @@
   /*For mobile phones:*/
   .footer__logo {
     max-width: 98px;
-    height: 19px;
     margin-bottom: 40px;
   }
 

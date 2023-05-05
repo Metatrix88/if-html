@@ -163,6 +163,10 @@
     margin-bottom: var(--unit);
   }
 
+  .destinations__subtitle {
+    font-size: 12px;
+  }
+
   .destinations__button-next {
     top: 59%;
     left: 95%;
