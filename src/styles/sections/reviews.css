@@ -50,6 +50,7 @@
   flex-grow: 1;
   padding: 24px;
   background-color: var(--bg-color);
+  line-height: 1.16;
 }
 
 .review__wrap-links {
@@ -150,15 +151,11 @@
   right: 85px;
 }
 
-.review__sm-carousel {
-  display: none;
-}
-
 @media (max-width: 1024px) {
   /*For mobile tablets:*/
   .reviews__wrap-cards {
     font-size: 16px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .review__price {
@@ -287,23 +284,6 @@
 
   .reviews__button-next {
     display: none;
-  }
-
-  .review__sm-carousel {
-    display: flex;
-    justify-content: center;
-    gap: var(--unit);
-  }
-
-  .review__sm-cirсle {
-    width: 8px;
-    height: 8px;
-    border: 1px solid #333333;
-    border-radius: 50%;
-  }
-
-  .review__sm-cirсle:first-child {
-    background-color: #333333;
   }
 
   ._review__sm-none {

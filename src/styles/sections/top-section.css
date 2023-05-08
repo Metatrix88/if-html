@@ -11,8 +11,8 @@
 .top-section__title {
   color: white;
   max-width: 542px;
-  font-weight: 500;
   font-size: 50px;
+  text-align: left;
   margin-bottom: 145px;
 }
 
@@ -34,7 +34,6 @@
   /*For mobile phones:*/
   .top-section {
     padding-top: 88px;
-    padding-bottom: var(--block-space);
   }
 
   .top-section__title {
